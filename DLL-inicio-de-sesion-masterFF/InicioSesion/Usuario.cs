@@ -11,7 +11,7 @@ namespace InicioSesion
 {
     public class Usuario
     {
-
+        //VHJZ
         public void guardarCodigoApp(string codigo)
         {
             Logica capaLogica = new Logica();
