@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.ventana1 = new ventanaDiseno.ventana();
             this.navegador1 = new CapaDisenoNavegador.Navegador();
             this.dgv_Dominio = new System.Windows.Forms.DataGridView();
@@ -54,7 +54,7 @@
             this.ventana1.Location = new System.Drawing.Point(0, 0);
             this.ventana1.Margin = new System.Windows.Forms.Padding(5);
             this.ventana1.Name = "ventana1";
-            this.ventana1.Size = new System.Drawing.Size(1377, 643);
+            this.ventana1.Size = new System.Drawing.Size(1416, 643);
             this.ventana1.TabIndex = 0;
             this.ventana1.Load += new System.EventHandler(this.ventana1_Load);
             // 
@@ -75,14 +75,14 @@
             // 
             this.dgv_Dominio.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_Dominio.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI Emoji", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv_Dominio.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI Emoji", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv_Dominio.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgv_Dominio.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_Dominio.EnableHeadersVisualStyles = false;
             this.dgv_Dominio.Location = new System.Drawing.Point(433, 567);
@@ -90,8 +90,8 @@
             this.dgv_Dominio.Name = "dgv_Dominio";
             this.dgv_Dominio.RowHeadersVisible = false;
             this.dgv_Dominio.RowHeadersWidth = 51;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI Emoji", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dgv_Dominio.RowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Emoji", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgv_Dominio.RowsDefaultCellStyle = dataGridViewCellStyle2;
             this.dgv_Dominio.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgv_Dominio.Size = new System.Drawing.Size(663, 185);
             this.dgv_Dominio.TabIndex = 3;
@@ -199,6 +199,7 @@
             this.Lbl_IdNormativa.Size = new System.Drawing.Size(119, 23);
             this.Lbl_IdNormativa.TabIndex = 16;
             this.Lbl_IdNormativa.Text = "Normativa:";
+            this.Lbl_IdNormativa.Visible = false;
             // 
             // Txt_IdNormativa
             // 
@@ -209,12 +210,13 @@
             this.Txt_IdNormativa.Size = new System.Drawing.Size(85, 32);
             this.Txt_IdNormativa.TabIndex = 15;
             this.Txt_IdNormativa.Tag = "4";
+            this.Txt_IdNormativa.Visible = false;
             // 
             // Frm_dominio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1377, 643);
+            this.ClientSize = new System.Drawing.Size(1416, 643);
             this.Controls.Add(this.Lbl_IdNormativa);
             this.Controls.Add(this.Txt_IdNormativa);
             this.Controls.Add(this.Lbl_Normativa);

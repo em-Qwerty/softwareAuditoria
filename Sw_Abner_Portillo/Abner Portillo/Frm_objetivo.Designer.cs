@@ -54,7 +54,7 @@
             this.ventana1.Location = new System.Drawing.Point(0, 0);
             this.ventana1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ventana1.Name = "ventana1";
-            this.ventana1.Size = new System.Drawing.Size(1140, 643);
+            this.ventana1.Size = new System.Drawing.Size(1373, 643);
             this.ventana1.TabIndex = 0;
             this.ventana1.Load += new System.EventHandler(this.ventana1_Load);
             // 
@@ -82,6 +82,7 @@
             this.Lbl_IdNormativa.Size = new System.Drawing.Size(119, 23);
             this.Lbl_IdNormativa.TabIndex = 26;
             this.Lbl_IdNormativa.Text = "Normativa:";
+            this.Lbl_IdNormativa.Visible = false;
             // 
             // Txt_IdDomino
             // 
@@ -92,6 +93,7 @@
             this.Txt_IdDomino.Size = new System.Drawing.Size(85, 32);
             this.Txt_IdDomino.TabIndex = 25;
             this.Txt_IdDomino.Tag = "4";
+            this.Txt_IdDomino.Visible = false;
             // 
             // Lbl_Domino
             // 
@@ -214,7 +216,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1140, 643);
+            this.ClientSize = new System.Drawing.Size(1373, 643);
             this.Controls.Add(this.dgv_Objetivo);
             this.Controls.Add(this.Lbl_IdNormativa);
             this.Controls.Add(this.Txt_IdDomino);

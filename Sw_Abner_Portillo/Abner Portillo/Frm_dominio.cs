@@ -63,6 +63,8 @@ namespace Abner_Portillo
             dgv_Dominio.Columns[0].HeaderText = "Codigo";
             dgv_Dominio.Columns[1].HeaderText = "Dominio";
             dgv_Dominio.Columns[2].HeaderText = "Descripcion";
+            dgv_Dominio.Columns[3].Visible = false;
+
         }
 
         private void dgv_Dominio_CellDoubleClick(object sender, DataGridViewCellEventArgs e)

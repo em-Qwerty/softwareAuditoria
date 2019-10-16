@@ -22,6 +22,9 @@ namespace Abner_Portillo
 
         public Frm_objetivo()
         {
+
+            InitializeComponent();
+
             ven.pubSetName("Objetivos de Dominio");
 
             mod = nvAplicacion.cargarCombobox("tbl_objetivo", "PK_Id_Objetivo", "Nombre", "estatus");
@@ -49,11 +52,10 @@ namespace Abner_Portillo
             }
 
             DataTable tabla = nvAplicacion.cargarDatos("tbl_objetivo");
-            dgv_Objetivo.DataSource = tabla;
+            dgv_Objetivo.DataSource = tabla.DefaultView;
             nvAplicacion.nombreForm(this);
             nvAplicacion.setDataGR(dgv_Objetivo);
 
-            InitializeComponent();
         }
 
         private void ventana1_Load(object sender, EventArgs e)
@@ -63,6 +65,8 @@ namespace Abner_Portillo
             dgv_Objetivo.Columns[0].HeaderText = "Codigo";
             dgv_Objetivo.Columns[1].HeaderText = "Dominio";
             dgv_Objetivo.Columns[2].HeaderText = "Descripcion";
+            dgv_Objetivo.Columns[3].Visible = false;
+
         }
 
         private void dgv_Objetivo_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
