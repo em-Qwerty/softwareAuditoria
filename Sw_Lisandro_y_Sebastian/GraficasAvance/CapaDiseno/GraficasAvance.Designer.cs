@@ -49,9 +49,9 @@
             this.Lbl_seleccionar_dominio.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Lbl_seleccionar_dominio.Location = new System.Drawing.Point(80, 94);
             this.Lbl_seleccionar_dominio.Name = "Lbl_seleccionar_dominio";
-            this.Lbl_seleccionar_dominio.Size = new System.Drawing.Size(194, 28);
+            this.Lbl_seleccionar_dominio.Size = new System.Drawing.Size(192, 28);
             this.Lbl_seleccionar_dominio.TabIndex = 5;
-            this.Lbl_seleccionar_dominio.Text = "Seleccionar dominio:";
+            this.Lbl_seleccionar_dominio.Text = "Seleccionar Objetivo";
             // 
             // Cbo_dominios
             // 

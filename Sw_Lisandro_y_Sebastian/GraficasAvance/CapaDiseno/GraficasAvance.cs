@@ -21,7 +21,7 @@ namespace CapaDiseno
         private void GraficasAvance_Load(object sender, EventArgs e)
         {
             Logica logica = new Logica();
-            logica.cargarComboBox(this, e, Cbo_dominios, "SELECT Nombre FROM bdauditoria.tbl_dominio WHERE PK_Id_dominio <> 10000");
+            logica.cargarComboBox(this, e, Cbo_dominios, "SELECT Nombre FROM bdauditoria.tbl_objetivo WHERE PK_Id_Objetivo > -1");
         }
 
         private void Cbo_dominios_SelectedIndexChanged(object sender, EventArgs e)
