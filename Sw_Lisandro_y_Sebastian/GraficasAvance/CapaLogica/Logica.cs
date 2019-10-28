@@ -20,11 +20,11 @@ namespace CapaLogica
 {
     public class Logica
     {
-        public void cargarDominios(object sender, EventArgs e, System.Windows.Forms.ComboBox cmbx, string consulta)
+        public void cargarComboBox(object sender, EventArgs e, System.Windows.Forms.ComboBox cmbx, string consulta)
          {
             // 27/10/2019 Autor: Victor Fernandez
             // Este metodo carga los resultados de una columna (de uan consulta) al
-            // combobox
+            // combobox pasado como parametro
 
             try
             {
