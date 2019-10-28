@@ -45,8 +45,9 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
-    <Reference Include="ventanaDiseno">
-      <HintPath>..\..\..\..\..\..\Downloads\ventanaDiseno.dll</HintPath>
+    <Reference Include="ventanaDiseno, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Sw_Abner_Portillo\Abner Portillo\bin\Debug\ventanaDiseno.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

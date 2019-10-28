@@ -15,12 +15,13 @@ namespace CapaDatos
             MySqlConnection conn = new MySqlConnection();
             string myConnectionString;
 
-            myConnectionString = "Server=localhost;Database=; Uid=root;Pwd='';";
+            myConnectionString = "Server=localhost;Database=bdauditoria; Uid=root;Pwd='';";
 
             try
             {
                 conn.ConnectionString = myConnectionString;
                 conn.Open();
+                Console.WriteLine("Conexion exitosa");
             }
             catch (MySql.Data.MySqlClient.MySqlException ex)
             {

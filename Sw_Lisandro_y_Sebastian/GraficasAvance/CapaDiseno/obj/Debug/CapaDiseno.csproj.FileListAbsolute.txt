@@ -1,5 +1,4 @@
 C:\Users\Vic\Documents\GitHub\softwareAuditoria\Sw_Lisandro_y_Sebastian\GraficasAvance\CapaDiseno\obj\Debug\CapaDiseno.csprojAssemblyReference.cache
-C:\Users\Vic\Documents\GitHub\softwareAuditoria\Sw_Lisandro_y_Sebastian\GraficasAvance\CapaDiseno\obj\Debug\CapaDiseno.GraficasAvance.resources
 C:\Users\Vic\Documents\GitHub\softwareAuditoria\Sw_Lisandro_y_Sebastian\GraficasAvance\CapaDiseno\obj\Debug\CapaDiseno.csproj.GenerateResource.cache
 C:\Users\Vic\Documents\GitHub\softwareAuditoria\Sw_Lisandro_y_Sebastian\GraficasAvance\CapaDiseno\obj\Debug\CapaDiseno.csproj.CoreCompileInputs.cache
 C:\Users\Vic\Documents\GitHub\softwareAuditoria\Sw_Lisandro_y_Sebastian\GraficasAvance\CapaDiseno\bin\Debug\CapaDiseno.dll
@@ -15,3 +14,4 @@ C:\Users\Vic\Documents\GitHub\softwareAuditoria\Sw_Lisandro_y_Sebastian\Graficas
 C:\Users\Vic\Documents\GitHub\softwareAuditoria\Sw_Lisandro_y_Sebastian\GraficasAvance\CapaDiseno\obj\Debug\CapaDiseno.csproj.CopyComplete
 C:\Users\Vic\Documents\GitHub\softwareAuditoria\Sw_Lisandro_y_Sebastian\GraficasAvance\CapaDiseno\obj\Debug\CapaDiseno.dll
 C:\Users\Vic\Documents\GitHub\softwareAuditoria\Sw_Lisandro_y_Sebastian\GraficasAvance\CapaDiseno\obj\Debug\CapaDiseno.pdb
+C:\Users\Vic\Documents\GitHub\softwareAuditoria\Sw_Lisandro_y_Sebastian\GraficasAvance\CapaDiseno\obj\Debug\CapaDiseno.GraficasAvance.resources
