@@ -55,10 +55,6 @@ namespace CapaLogica
             // 27/10/2019 Autor: Victor Fernandez
             // Esta funcion devuelve el numero de subobjetivos dependiendo el objetivo 
 
-            //SELECT COUNT(Nombre) AS NumeroSubobjetivos
-            //FROM tbl_subobjetivo
-            //WHERE tbl_objetivo_PK_Id_objetivo = 1;
-
             int totalSubobjetivos = 0;
 
             try
@@ -84,6 +80,20 @@ namespace CapaLogica
             }
 
             return totalSubobjetivos;
+        }
+
+        public double calcularValorPorcentualSubobjetivo(int idObjetivo)
+        {
+            // 27/10/2019 Autor: Victor Fernandez
+            // Esta funcion devuelve el valor porcentual de cada subobjetivo
+            // Por ejemplo:
+            // Si el objetivo 1 tiene 15 subobjetivos, cada subobjetivo tendria un valor de 6.6666667
+          
+
+            int porcentajeTotal = 100;
+            double valorPorcentualSubobjetivo = porcentajeTotal / contarSubobjetivos(idObjetivo);
+
+            return valorPorcentualSubobjetivo;
         }
 
     }
