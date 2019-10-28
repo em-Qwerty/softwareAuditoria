@@ -20,15 +20,7 @@ namespace CapaLogica
 {
     public class Logica
     {
-        public DataTable consultaLogica(string dato, string campo, string tabla)  //obtener datos de la consulta
-        {
-            Sentencia sn = new Sentencia();
-            MySqlDataAdapter dt = sn.consultaBD(dato, campo, tabla);
-            DataTable table = new DataTable();
-            dt.Fill(table);
-            return table;
-        }
-
+       
         private static List<T> ConvertDataTable<T>(DataTable dt)
         {
             List<T> data = new List<T>();
@@ -59,7 +51,7 @@ namespace CapaLogica
         }
 
 
-        public void cargarDominios(object sender, EventArgs e, System.Windows.Forms.ComboBox cmbx)
+        public void cargarDominios(object sender, EventArgs e, System.Windows.Forms.ComboBox cmbx, string consulta)
          {
             // 27/10/2019 Autor: Victor Fernandez
             // Esta funcion carga los dominios guardados en la base de datos al
@@ -112,16 +104,22 @@ namespace CapaLogica
 
             try
             {
-                MySqlConnection connection = new MySqlConnection("Datasource=localhost;port=3306;username=root;password=");
+                ConectarServidor cn = new ConectarServidor();
+                string comando = consulta;
 
-                string selectQuery = "SELECT Nombre FROM bdauditoria.tbl_dominio WHERE PK_Id_dominio <> 100000";
-                connection.Open(); ;
-                MySqlCommand command = new MySqlCommand(selectQuery, connection);
-                MySqlDataReader reader = command.ExecuteReader();
-                while (reader.Read())
+                OdbcCommand command = new OdbcCommand(comando, cn.Conexion()); 
+                OdbcDataReader queryResultsReader = command.ExecuteReader();
+
+
+                /*Sentencia miSentencia = new Sentencia();
+                queryResultsReader = miSentencia.consultaBD(comando);*/
+
+                while (queryResultsReader.Read())
                 {
-                    cmbx.Items.Add(reader.GetString("Nombre"));
+                  
+                    cmbx.Items.Add(queryResultsReader.GetString(0));
                 }
+
             }
             catch (Exception ex)
             {

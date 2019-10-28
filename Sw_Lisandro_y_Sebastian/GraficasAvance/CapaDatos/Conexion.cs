@@ -3,32 +3,41 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using MySql.Data.MySqlClient;
+using System.Data;
+using System.Windows.Forms;
+using System.Data.Odbc;
+
 
 
 namespace CapaDatos
 {
-    public class Conexion
+    public class ConectarServidor
     {
-        public MySqlConnection probarConexion()
+        public OdbcConnection Conexion()
         {
-            MySqlConnection conn = new MySqlConnection();
-            string myConnectionString;
-
-            myConnectionString = "Server=localhost;Database=bdauditoria; Uid=root;Pwd='';";
-
+            OdbcConnection conectar = new OdbcConnection("Dsn=dsnauditoria;");
             try
             {
-                conn.ConnectionString = myConnectionString;
-                conn.Open();
-                Console.WriteLine("Conexion exitosa");
+                conectar.Open();
             }
-            catch (MySql.Data.MySqlClient.MySqlException ex)
+            catch (Exception ex)
             {
-                Console.WriteLine("No se pudo conectar con la base de datos");
+                MessageBox.Show(ex.Message);
             }
-            return conn;
+            return conectar;
         }
-
+        public OdbcConnection CerrarConexion()
+        {
+            OdbcConnection conectar = new OdbcConnection("Dsn=dsnauditoria;");
+            try
+            {
+                conectar.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            return conectar;
+        }
     }
 }
