@@ -96,5 +96,8 @@ namespace CapaLogica
             return valorPorcentualSubobjetivo;
         }
 
+
+
+
     }
 }

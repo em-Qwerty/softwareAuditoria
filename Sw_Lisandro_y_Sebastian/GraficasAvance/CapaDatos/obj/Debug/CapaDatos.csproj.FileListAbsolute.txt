@@ -7,4 +7,3 @@ C:\Users\Vic\Documents\GitHub\softwareAuditoria\Sw_Lisandro_y_Sebastian\Graficas
 C:\Users\Vic\Documents\GitHub\softwareAuditoria\Sw_Lisandro_y_Sebastian\GraficasAvance\CapaDatos\obj\Debug\CapaDatos.csproj.CopyComplete
 C:\Users\Vic\Documents\GitHub\softwareAuditoria\Sw_Lisandro_y_Sebastian\GraficasAvance\CapaDatos\obj\Debug\CapaDatos.dll
 C:\Users\Vic\Documents\GitHub\softwareAuditoria\Sw_Lisandro_y_Sebastian\GraficasAvance\CapaDatos\obj\Debug\CapaDatos.pdb
-C:\Users\Vic\Documents\GitHub\softwareAuditoria\Sw_Lisandro_y_Sebastian\GraficasAvance\CapaDatos\obj\Debug\CapaDatos.csprojAssemblyReference.cache
