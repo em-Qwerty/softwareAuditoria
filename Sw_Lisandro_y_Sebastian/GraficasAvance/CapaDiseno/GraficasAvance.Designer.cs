@@ -42,8 +42,9 @@
             this.Lbl_datos_a_elegir = new System.Windows.Forms.Label();
             this.Lbl_datos_grafica = new System.Windows.Forms.Label();
             this.Chart_avance = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.Cbo_tipo_grafica = new System.Windows.Forms.ComboBox();
             this.Lbl_seleccionar_tipo_grafica = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.Chart_avance)).BeginInit();
             this.SuspendLayout();
             // 
@@ -175,14 +176,16 @@
             this.Chart_avance.TabIndex = 15;
             this.Chart_avance.Text = "Chart_Avance";
             // 
-            // comboBox2
+            // Cbo_tipo_grafica
             // 
-            this.comboBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(27, 484);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(415, 33);
-            this.comboBox2.TabIndex = 17;
+            this.Cbo_tipo_grafica.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Cbo_tipo_grafica.FormattingEnabled = true;
+            this.Cbo_tipo_grafica.Items.AddRange(new object[] {
+            "Barras"});
+            this.Cbo_tipo_grafica.Location = new System.Drawing.Point(27, 484);
+            this.Cbo_tipo_grafica.Name = "Cbo_tipo_grafica";
+            this.Cbo_tipo_grafica.Size = new System.Drawing.Size(415, 33);
+            this.Cbo_tipo_grafica.TabIndex = 17;
             // 
             // Lbl_seleccionar_tipo_grafica
             // 
@@ -193,13 +196,25 @@
             this.Lbl_seleccionar_tipo_grafica.TabIndex = 18;
             this.Lbl_seleccionar_tipo_grafica.Text = "Tipo de gráfica";
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(79)))), ((int)(((byte)(115)))));
+            this.button1.Enabled = false;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Location = new System.Drawing.Point(0, 0);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(1140, 61);
+            this.button1.TabIndex = 19;
+            this.button1.UseVisualStyleBackColor = false;
+            // 
             // GraficasAvance
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.Lbl_seleccionar_tipo_grafica);
-            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.Cbo_tipo_grafica);
             this.Controls.Add(this.Chart_avance);
             this.Controls.Add(this.Lbl_datos_grafica);
             this.Controls.Add(this.Lbl_datos_a_elegir);
@@ -235,7 +250,8 @@
         private System.Windows.Forms.Label Lbl_datos_a_elegir;
         private System.Windows.Forms.Label Lbl_datos_grafica;
         private System.Windows.Forms.DataVisualization.Charting.Chart Chart_avance;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox Cbo_tipo_grafica;
         private System.Windows.Forms.Label Lbl_seleccionar_tipo_grafica;
+        private System.Windows.Forms.Button button1;
     }
 }

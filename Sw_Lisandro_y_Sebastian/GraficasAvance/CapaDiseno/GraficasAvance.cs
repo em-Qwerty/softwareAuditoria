@@ -11,6 +11,9 @@ using CapaLogica;
 using CapaDatos;
 using System.Data.Odbc;
 using System.Collections;
+using System.Data.SqlClient;
+using System.Configuration;
+using System.Windows.Forms.DataVisualization.Charting;
 
 
 
@@ -228,7 +231,7 @@ namespace CapaDiseno
             }
             Lst_datos_grafica.Items.Clear();
         }
-        private void CrearGrafica(ListBox miListBox, ComboBox seleccion)
+        private void CrearGraficaBarras(ListBox miListBox, ComboBox seleccion)
         {
             /* Autor: Victor Fernandez
              * Fecha: 28/10/2019
@@ -259,20 +262,46 @@ namespace CapaDiseno
         }
         private void Btn_crear_grafica_Click(object sender, EventArgs e)
         {
-            if (Cbo_seleccion.SelectedIndex == 1)
+            if (Cbo_tipo_grafica.SelectedIndex == 0)
             {
-                Logica plogica = new Logica();
-                plogica.CalcularAvanceObjetivos(Lst_datos_grafica);
-                plogica.CalcularAvanceDominios(Lst_datos_grafica);
+
+                if (Cbo_seleccion.SelectedIndex == 1)
+                {
+                    Logica plogica = new Logica();
+                    plogica.CalcularAvanceObjetivos(Lst_datos_grafica);
+                    plogica.CalcularAvanceDominios(Lst_datos_grafica);
+                }
+
+                if (Cbo_seleccion.SelectedIndex == 2)
+                {
+                    Logica plogica = new Logica();
+                    plogica.CalcularAvanceObjetivos(Lst_datos_grafica);
+                }
+
+                CrearGraficaBarras(Lst_datos_grafica, Cbo_seleccion);
             }
 
-            if (Cbo_seleccion.SelectedIndex == 2)
+
+            else
             {
-                Logica plogica = new Logica();
-                plogica.CalcularAvanceObjetivos(Lst_datos_grafica);
+                if (Cbo_seleccion.SelectedIndex == 1)
+                {
+                    Logica plogica = new Logica();
+                    plogica.CalcularAvanceObjetivos(Lst_datos_grafica);
+                    plogica.CalcularAvanceDominios(Lst_datos_grafica);
+                }
+
+                if (Cbo_seleccion.SelectedIndex == 2)
+                {
+                    Logica plogica = new Logica();
+                    plogica.CalcularAvanceObjetivos(Lst_datos_grafica);
+                }
+
+                CrearGraficaBarras(Lst_datos_grafica, Cbo_seleccion);
             }
-            
-            CrearGrafica(Lst_datos_grafica, Cbo_seleccion);
+
+
+
         }
     }
 }
