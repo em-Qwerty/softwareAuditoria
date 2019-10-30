@@ -139,10 +139,10 @@ namespace CapaLogica
             double valorPorcentualSubobjetivo = 0;
 
             // Evitando division entre 0
-           
-
+            if (contarSubobjetivos(idObjetivo) != 0)
+            {
                 valorPorcentualSubobjetivo = porcentajeTotal / contarSubobjetivos(idObjetivo);
-            
+            }
 
             return valorPorcentualSubobjetivo;
         }
@@ -162,9 +162,10 @@ namespace CapaLogica
 
             // Evitando division entre 0
 
-
-            valorPorcentualObjetivo = porcentajeTotal / contarObjetivos(idDominio);
-
+            if (contarObjetivos(idDominio) != 0)
+            {
+                valorPorcentualObjetivo = porcentajeTotal / contarObjetivos(idDominio);
+            }
 
             return valorPorcentualObjetivo;
         }
@@ -348,7 +349,6 @@ namespace CapaLogica
       
 
         }
-
         public void CalcularAvanceDominios(ListBox datos_a_graficar)
         {
             /* Autor: Victor Fernandez
