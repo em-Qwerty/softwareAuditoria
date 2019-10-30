@@ -139,10 +139,14 @@ namespace CapaLogica
             double valorPorcentualSubobjetivo = 0;
 
             // Evitando division entre 0
-            if (contarSubobjetivos(idObjetivo) != 0)
-            {
+            //if (contarSubobjetivos(idObjetivo) != 0)
+            //{ 
                 valorPorcentualSubobjetivo = porcentajeTotal / contarSubobjetivos(idObjetivo);
-            }
+            //} 
+            //else
+            //{
+                valorPorcentualSubobjetivo = 0.00001;
+            //}
 
             return valorPorcentualSubobjetivo;
         }
@@ -162,11 +166,11 @@ namespace CapaLogica
 
             // Evitando division entre 0
 
-            if (contarObjetivos(idDominio) != 0)
-            {
+            //if (contarObjetivos(idDominio) != 0)
+            //{
                 valorPorcentualObjetivo = porcentajeTotal / contarObjetivos(idDominio);
-            }
-
+            //}
+           
             return valorPorcentualObjetivo;
         }
         public string ObtenerNombreTabla(ComboBox Cbo_seleccion)
@@ -341,8 +345,8 @@ namespace CapaLogica
                 catch (Exception ex)
                 {
                     // Mostrando mensaje que indica el error 
-                    MessageBox.Show(ex.Message);
-                    MessageBox.Show("CalcularAvanceObjetivos2");
+                    //MessageBox.Show(ex.Message);
+                    //MessageBox.Show("CalcularAvanceObjetivos2");
                 }
             }
 
@@ -444,8 +448,8 @@ namespace CapaLogica
                 catch (Exception ex)
                 {
                     // Mostrando mensaje que indica el error 
-                    MessageBox.Show(ex.Message);
-                    MessageBox.Show("CalcularAvanceObjetivos2");
+                    //MessageBox.Show(ex.Message);
+                    //MessageBox.Show("CalcularAvanceObjetivos2");
                 }
             }
 
