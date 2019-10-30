@@ -218,91 +218,39 @@ namespace CapaDiseno
 
 
 
-        private void CrearGrafica(ListBox miListBox)
+        private void CrearGrafica(ListBox miListBox, ComboBox seleccion)
         {
-            // Fecha: 28/10/2019 Autor: Victor Fernandez
-            // Esta funcion crea la grafica a partir de los datos en miListBox
+            /* Autor: Victor Fernandez
+             * Fecha: 28/10/2019
+             * 
+             * Descripcion: Metodo para crear una grafica basandose en la seleccion del
+             * primer ComboBox
+             * ...
+             * 
+             */
+
+            Logica pLogica = new Logica();
 
 
-
-            // separar esta funcion en 2, una para obtener el progreso y otra para crear la grafica
-
-            // Pasando todos los items de miListBox a un arreglo
-            string[] clist = miListBox.Items.OfType<string>().ToArray();
-
-            // string para guardar el nombre de la tabla
-            string tabla = "";
-
-            // Array para guardar el progreso de cada normativa/dominio/objetivo/subobj.
-            // Nota: modificar para que sea dinamico
-            string[] progreso = new string[2500];
-
-            int itemsTotal = miListBox.Items.Count;
-
+            // Eliminando grafica anterior
             Chart_avance.Series.Clear();
+            Chart_avance.Titles.Clear();
 
-            if (Cbo_seleccion.SelectedIndex == 0)
-            {
-                tabla = "tbl_normativa";
-            }
-            else if (Cbo_seleccion.SelectedIndex == 1)
-            {
-                tabla = "tbl_dominio";
-            }
-            else if (Cbo_seleccion.SelectedIndex == 2)
-            {
-                tabla = "tbl_objetivo";
-            }
-            else if (Cbo_seleccion.SelectedIndex == 3)
-            {
-                tabla = "tbl_subobjetivo";
-            }
-
-            // Obteniendo el progreso por cada item en miListBox y guardandolo en un arreglo
-            for (int i = 0; i < clist.Length - 1; i++)
-            {
-                try
-                {
-                    ConectarServidor cn = new ConectarServidor();
-                    string comando = "SELECT progreso FROM " + tabla + " WHERE Nombre =" + "'" + Convert.ToString(miListBox.Items[i] + "'");
-
-
-                    OdbcCommand command = new OdbcCommand(comando, cn.Conexion());
-                    OdbcDataReader queryResultsReader = command.ExecuteReader();
-
-                    while (queryResultsReader.Read())
-                    {
-                        progreso[i] = queryResultsReader.GetString(0); // obtiene la columna 0
-
-                    }
-
-                }
-                catch (Exception ex)
-                {
-                    // Mostrando mensaje que indica el error 
-                    MessageBox.Show(ex.Message);
-                }
-
-            }
-
-
-
-            for (int i = 0; i < itemsTotal; i++)
+            for (int i = 0; i < Lst_datos_grafica.Items.Count; i++)
             {
                 Chart_avance.Series.Add(Convert.ToString(miListBox.Items[i]));
-                Chart_avance.Series[Convert.ToString(miListBox.Items[i])].Points.AddXY(miListBox.Items[i], progreso[i]);
+                Chart_avance.Series[Convert.ToString(miListBox.Items[i])].Points.AddXY(miListBox.Items[i],
+                                                    pLogica.ObtenerProgresoFromListBox(Lst_datos_grafica, 
+                                                    seleccion)[i]);
 
             }
 
             Chart_avance.Titles.Add("Porcentaje de avance " + Convert.ToString(Cbo_seleccion.SelectedItem));
-            
-
         }
 
         private void Btn_crear_grafica_Click(object sender, EventArgs e)
         {
-            
-            CrearGrafica(Lst_datos_grafica);
+            CrearGrafica(Lst_datos_grafica, Cbo_seleccion);
         }
     }
 }

@@ -52,8 +52,14 @@ namespace CapaLogica
 
         public int contarSubobjetivos(int idObjetivo)
         {
-            // 27/10/2019 Autor: Victor Fernandez
-            // Esta funcion devuelve el numero de subobjetivos dependiendo el objetivo 
+            /* Autor: Victor Fernandez
+             * Fecha: 27/10/2019
+             * 
+             * Descripcion: Funcion para devolver el numero de subobjetivos dependiendo
+             * el objetivo seleccionado
+             * ...
+             * 
+             */
 
             int totalSubobjetivos = 0;
 
@@ -84,12 +90,15 @@ namespace CapaLogica
 
         public double calcularValorPorcentualSubobjetivo(int idObjetivo)
         {
-            // 27/10/2019 Autor: Victor Fernandez
-            // Esta funcion devuelve el valor porcentual de cada subobjetivo
-            // Por ejemplo:
-            // Si el objetivo 1 tiene 15 subobjetivos, cada subobjetivo tendria un valor de 6.6666667
-          
-
+            /* Autor: Victor Fernandez
+             * Fecha: 27/10/2019
+             * 
+             * Descripcion: Funcion para devolver el valor porcentual de cada objetivo
+             * Por ejemplo: Si el objetivo 1 tiene 15 subobjetivos, cada subobjetivo tendria
+             * un valor de 6.6666667
+             * ...
+             * 
+             */
             int porcentajeTotal = 100;
             double valorPorcentualSubobjetivo = porcentajeTotal / contarSubobjetivos(idObjetivo);
 
@@ -97,7 +106,94 @@ namespace CapaLogica
         }
 
 
+        public string ObtenerNombreTabla(ComboBox Cbo_seleccion)
+        {
+            /* Autor: Victor Fernandez
+             * Fecha: 28/10/2019
+             * 
+             * Descripcion: Funcion para obtner el nombre de la tabla
+             * en la base de datos, dependiendo la seleccion 
+             * ...
+             * 
+             */
 
+            string tabla = "";
+
+            if (Cbo_seleccion.SelectedIndex == 0)
+            {
+                tabla = "tbl_normativa";
+            }
+            else if (Cbo_seleccion.SelectedIndex == 1)
+            {
+                tabla = "tbl_dominio";
+            }
+            else if (Cbo_seleccion.SelectedIndex == 2)
+            {
+                tabla = "tbl_objetivo";
+            }
+            else if (Cbo_seleccion.SelectedIndex == 3)
+            {
+                tabla = "tbl_subobjetivo";
+            }
+
+            return tabla;
+        }
+
+        public string[] ObtenerProgresoFromListBox(ListBox Lst_datos_grafica, ComboBox Cbo_seleccion)
+        {
+            /* Autor: Victor Fernandez
+             * Fecha: 28/10/2019
+             * 
+             * Descripcion: Funcion para mover obtener el progreso de avance de 
+             * cada item en la lista.
+             * ...
+             * 
+             */
+
+            string[] datos_grafica = Lst_datos_grafica.Items.OfType<string>().ToArray();
+            string[] progreso = new string[2500];
+            int itemsTotal = Lst_datos_grafica.Items.Count;
+
+            /* Obteniendo el progreso por cada item en Lst_datos_grafica y guardandolo
+             * en un arreglo
+             * 
+             */
+
+         
+
+            for (int i = 0; i < datos_grafica.Length; i++)
+            {
+                try
+                {
+                    ConectarServidor miConexion = new ConectarServidor();
+                    string sentencia = "SELECT Progreso FROM " + ObtenerNombreTabla(Cbo_seleccion) +
+                                       " WHERE Nombre = " + "'" +
+                                       Convert.ToString(Lst_datos_grafica.Items[i] + "'");
+
+                    OdbcCommand comando = new OdbcCommand(sentencia, miConexion.Conexion());
+                    OdbcDataReader lector_query = comando.ExecuteReader();
+
+                    while (lector_query.Read())
+                    {
+                        progreso[i] = lector_query.GetString(0);
+                    }
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+                            
+                      
+            }
+
+
+
+            return progreso;
+        }
+
+
+  
 
     }
 }
