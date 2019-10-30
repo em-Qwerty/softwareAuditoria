@@ -134,12 +134,39 @@ namespace CapaLogica
              * ...
              * 
              */
+
             int porcentajeTotal = 100;
+            double valorPorcentualSubobjetivo = 0;
 
+            // Evitando division entre 0
+           
 
-            double valorPorcentualSubobjetivo = porcentajeTotal / contarSubobjetivos(idObjetivo);
+                valorPorcentualSubobjetivo = porcentajeTotal / contarSubobjetivos(idObjetivo);
+            
 
             return valorPorcentualSubobjetivo;
+        }
+        public double calcularValorPorcentualObjetivo(int idDominio)
+        {
+            /* Autor: Victor Fernandez
+             * Fecha: 27/10/2019
+             * 
+             * Descripcion: Funcion para devolver el valor porcentual de cada objetivos
+             * 
+             * ...
+             * 
+             */
+
+            int porcentajeTotal = 100;
+            double valorPorcentualObjetivo = 0;
+
+            // Evitando division entre 0
+
+
+            valorPorcentualObjetivo = porcentajeTotal / contarObjetivos(idDominio);
+
+
+            return valorPorcentualObjetivo;
         }
         public string ObtenerNombreTabla(ComboBox Cbo_seleccion)
         {
@@ -336,7 +363,7 @@ namespace CapaLogica
             double avanceDominio = 0;
 
 
-            // modificar para que calcule avance de dominios
+
 
             for (int i = 0; i < numeroDeDatosAGraficar; i++)
             {
@@ -346,20 +373,21 @@ namespace CapaLogica
 
                     ConectarServidor cn = new ConectarServidor();
 
-                    // Obteniendo el valor porcentual de cada objetivo
+                    // Obteniendo el valor porcentual de cada subobjetivo
 
-                        // Obteniedo el numero de objetivos de cada dominio
+                    // Obteniedo el numero de subobjetivos de cada objetivo
 
-                    string comando_obtener_id_dominio = "SELECT PK_Id_dominio FROM tbl_dominio" +
-                                                               " WHERE Nombre = " + "'" + datos_a_graficar.Items[i] + "'";
 
-                    string comando = "SELECT Progreso FROM tbl_objetivo " +
-                                     "WHERE tbl_dominio_PK_Id_dominio = " +
-                                     "                                          (SELECT PK_Id_dominio FROM tbl_dominio " +
-                                     "                                          WHERE Nombre = " + "'" + datos_a_graficar.Items[i] + "'";
+
+                    string comando_obtener_id_dominio = "SELECT PK_Id_dominio FROM tbl_dominio " +
+                                                         " WHERE Nombre = " + "'" + datos_a_graficar.Items[i] + "'";
+
+
+
 
                     OdbcCommand command = new OdbcCommand(comando_obtener_id_dominio, cn.Conexion());
                     OdbcDataReader queryResultsReader = command.ExecuteReader();
+
 
                     while (queryResultsReader.Read())
                     {
@@ -367,26 +395,7 @@ namespace CapaLogica
                         numeroDominio = (Convert.ToInt32(queryResultsReader.GetString(0)));
                     }
 
-                    valorPorcentual = calcularValorPorcentualSubobjetivo(numeroDominio);
 
-                    // Sumando el valor de cada subobjetivo perteneciente al respectivo objetivo
-
-                    command = new OdbcCommand(comando, cn.Conexion());
-                    queryResultsReader = command.ExecuteReader();
-
-                    while (queryResultsReader.Read())
-                    {
-                        avanceDominio += (Convert.ToInt32(queryResultsReader.GetString(0)) / 100) * valorPorcentual;
-                    }
-
-
-
-                    comando = "UPDATE tbl_dominio" +
-                              " SET Progreso = " + Convert.ToString(avanceDominio) +
-                              " WHERE Nombre = " + "'" + datos_a_graficar.Items[i] + "'";
-
-                    command = new OdbcCommand(comando, cn.Conexion());
-                    queryResultsReader = command.ExecuteReader();
 
                 }
 
@@ -394,7 +403,49 @@ namespace CapaLogica
                 {
                     // Mostrando mensaje que indica el error 
                     MessageBox.Show(ex.Message);
-                    MessageBox.Show("Error CalcularAvanceDominios");
+                    MessageBox.Show("CalcularAvanceDominios");
+                }
+
+                try
+                {
+                    ConectarServidor cn = new ConectarServidor();
+
+                    valorPorcentual = calcularValorPorcentualObjetivo(numeroDominio);
+
+                    string comando = "SELECT Progreso FROM tbl_objetivo " +
+                                 "WHERE tbl_dominio_PK_Id_dominio = " +
+                                 "(SELECT PK_Id_dominio FROM tbl_dominio " +
+                                 "WHERE Nombre = " + "'" + datos_a_graficar.Items[i] + "')";
+
+
+
+                    // Sumando el valor de cada subobjetivo perteneciente al respectivo objetivo
+
+                    OdbcCommand command = new OdbcCommand(comando, cn.Conexion());
+                    OdbcDataReader queryResultsReader = command.ExecuteReader();
+
+                    while (queryResultsReader.Read())
+                    {
+                        avanceDominio += (Convert.ToDouble(queryResultsReader.GetString(0)) / 100) * valorPorcentual;
+                    }
+
+                    comando = "UPDATE tbl_dominio " +
+                              " SET Progreso = " + Convert.ToString(avanceDominio) +
+                              " WHERE Nombre = " + "'" + datos_a_graficar.Items[i] + "'";
+
+
+
+                    command = new OdbcCommand(comando, cn.Conexion());
+                    queryResultsReader = command.ExecuteReader();
+
+                    
+
+                }
+                catch (Exception ex)
+                {
+                    // Mostrando mensaje que indica el error 
+                    MessageBox.Show(ex.Message);
+                    MessageBox.Show("CalcularAvanceObjetivos2");
                 }
             }
 

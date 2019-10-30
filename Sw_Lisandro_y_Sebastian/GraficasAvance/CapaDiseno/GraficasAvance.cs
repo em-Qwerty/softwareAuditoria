@@ -259,12 +259,12 @@ namespace CapaDiseno
         }
         private void Btn_crear_grafica_Click(object sender, EventArgs e)
         {
-            /*if (Cbo_seleccion.SelectedIndex == 1)
+            if (Cbo_seleccion.SelectedIndex == 1)
             {
                 Logica plogica = new Logica();
                 plogica.CalcularAvanceObjetivos(Lst_datos_grafica);
                 plogica.CalcularAvanceDominios(Lst_datos_grafica);
-            }*/
+            }
 
             if (Cbo_seleccion.SelectedIndex == 2)
             {
