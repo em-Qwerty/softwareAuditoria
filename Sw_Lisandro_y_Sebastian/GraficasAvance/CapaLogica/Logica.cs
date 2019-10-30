@@ -20,7 +20,7 @@ namespace CapaLogica
 {
     public class Logica
     {
-        public void cargarComboBox(object sender, EventArgs e, System.Windows.Forms.ComboBox cmbx, string consulta)
+        public void cargarComboBox(object sender, EventArgs e, ComboBox cmbx, string consulta)
          {
             // 27/10/2019 Autor: Victor Fernandez
             // Este metodo carga los resultados de una columna (de uan consulta) al
@@ -47,9 +47,6 @@ namespace CapaLogica
                 MessageBox.Show(ex.Message);
             }
         }
-
-
-
         public int contarSubobjetivos(int idObjetivo)
         {
             /* Autor: Victor Fernandez
@@ -87,7 +84,6 @@ namespace CapaLogica
 
             return totalSubobjetivos;
         }
-
         public double calcularValorPorcentualSubobjetivo(int idObjetivo)
         {
             /* Autor: Victor Fernandez
@@ -104,8 +100,6 @@ namespace CapaLogica
 
             return valorPorcentualSubobjetivo;
         }
-
-
         public string ObtenerNombreTabla(ComboBox Cbo_seleccion)
         {
             /* Autor: Victor Fernandez
@@ -138,7 +132,6 @@ namespace CapaLogica
 
             return tabla;
         }
-
         public string[] ObtenerProgresoFromListBox(ListBox Lst_datos_grafica, ComboBox Cbo_seleccion)
         {
             /* Autor: Victor Fernandez
@@ -182,13 +175,8 @@ namespace CapaLogica
                 catch (Exception ex)
                 {
                     MessageBox.Show(ex.Message);
-                }
-                            
-                      
+                }           
             }
-
-
-
             return progreso;
         }
 
