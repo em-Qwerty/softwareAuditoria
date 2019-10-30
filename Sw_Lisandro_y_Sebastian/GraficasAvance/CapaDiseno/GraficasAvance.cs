@@ -208,7 +208,6 @@ namespace CapaDiseno
              * 
              */
            
-
             for (int j = 0; j <= Lst_datos_a_elegir.Items.Count - 1; j++)
             {
                 Lst_datos_grafica.Items.Add(Lst_datos_a_elegir.Items[j]);
@@ -222,6 +221,7 @@ namespace CapaDiseno
              * Descripcion: Mueve todos los items de la lst_datos_grafica a
              * lst_datos_a_elegir
              */
+
             for (int j = 0; j <= Lst_datos_grafica.Items.Count - 1; j++)
             {
                 Lst_datos_a_elegir.Items.Add(Lst_datos_grafica.Items[j]);
@@ -259,6 +259,19 @@ namespace CapaDiseno
         }
         private void Btn_crear_grafica_Click(object sender, EventArgs e)
         {
+            /*if (Cbo_seleccion.SelectedIndex == 1)
+            {
+                Logica plogica = new Logica();
+                plogica.CalcularAvanceObjetivos(Lst_datos_grafica);
+                plogica.CalcularAvanceDominios(Lst_datos_grafica);
+            }*/
+
+            if (Cbo_seleccion.SelectedIndex == 2)
+            {
+                Logica plogica = new Logica();
+                plogica.CalcularAvanceObjetivos(Lst_datos_grafica);
+            }
+            
             CrearGrafica(Lst_datos_grafica, Cbo_seleccion);
         }
     }

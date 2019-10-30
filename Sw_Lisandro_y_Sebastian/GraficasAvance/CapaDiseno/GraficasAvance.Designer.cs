@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             this.Btn_crear_grafica = new System.Windows.Forms.Button();
             this.Lbl_seleccionar = new System.Windows.Forms.Label();
             this.Cbo_seleccion = new System.Windows.Forms.ComboBox();
@@ -73,7 +73,7 @@
             this.Cbo_seleccion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Cbo_seleccion.FormattingEnabled = true;
             this.Cbo_seleccion.Items.AddRange(new object[] {
-            "Normas",
+            "Normativas",
             "Dominios",
             "Objetivos",
             "Subobjetivos"});
@@ -104,7 +104,7 @@
             // Btn_mover_todos_derecha
             // 
             this.Btn_mover_todos_derecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_mover_todos_derecha.Location = new System.Drawing.Point(24, 413);
+            this.Btn_mover_todos_derecha.Location = new System.Drawing.Point(130, 413);
             this.Btn_mover_todos_derecha.Name = "Btn_mover_todos_derecha";
             this.Btn_mover_todos_derecha.Size = new System.Drawing.Size(100, 35);
             this.Btn_mover_todos_derecha.TabIndex = 9;
@@ -115,7 +115,7 @@
             // Btn_mover_derecha
             // 
             this.Btn_mover_derecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_mover_derecha.Location = new System.Drawing.Point(130, 413);
+            this.Btn_mover_derecha.Location = new System.Drawing.Point(24, 413);
             this.Btn_mover_derecha.Name = "Btn_mover_derecha";
             this.Btn_mover_derecha.Size = new System.Drawing.Size(100, 35);
             this.Btn_mover_derecha.TabIndex = 10;
@@ -126,7 +126,7 @@
             // Btn_mover_todos_izquierda
             // 
             this.Btn_mover_todos_izquierda.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_mover_todos_izquierda.Location = new System.Drawing.Point(342, 413);
+            this.Btn_mover_todos_izquierda.Location = new System.Drawing.Point(236, 413);
             this.Btn_mover_todos_izquierda.Name = "Btn_mover_todos_izquierda";
             this.Btn_mover_todos_izquierda.Size = new System.Drawing.Size(100, 35);
             this.Btn_mover_todos_izquierda.TabIndex = 12;
@@ -137,7 +137,7 @@
             // Btn_mover_izquierda
             // 
             this.Btn_mover_izquierda.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_mover_izquierda.Location = new System.Drawing.Point(236, 413);
+            this.Btn_mover_izquierda.Location = new System.Drawing.Point(342, 413);
             this.Btn_mover_izquierda.Name = "Btn_mover_izquierda";
             this.Btn_mover_izquierda.Size = new System.Drawing.Size(100, 35);
             this.Btn_mover_izquierda.TabIndex = 11;
@@ -165,10 +165,10 @@
             // 
             // Chart_avance
             // 
-            chartArea1.Name = "ChartArea1";
-            this.Chart_avance.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.Chart_avance.Legends.Add(legend1);
+            chartArea3.Name = "ChartArea1";
+            this.Chart_avance.ChartAreas.Add(chartArea3);
+            legend3.Name = "Legend1";
+            this.Chart_avance.Legends.Add(legend3);
             this.Chart_avance.Location = new System.Drawing.Point(459, 104);
             this.Chart_avance.Name = "Chart_avance";
             this.Chart_avance.Size = new System.Drawing.Size(647, 516);

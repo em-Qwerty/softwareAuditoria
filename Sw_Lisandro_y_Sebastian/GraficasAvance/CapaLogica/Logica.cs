@@ -63,7 +63,7 @@ namespace CapaLogica
             try
             {
                 ConectarServidor cn = new ConectarServidor();
-                string comando = "SELECT COUNT(Nombre) AS NumeroSubobjetivos FROM tbl_subobjetivo WHERE tbl_objetivo_PK_Id_objetivo =" + idObjetivo;
+                string comando = "SELECT COUNT(Nombre) AS NumeroSubobjetivos FROM tbl_subobjetivo WHERE tbl_objetivo_PK_Id_objetivo =" + Convert.ToString(idObjetivo);
 
                 OdbcCommand command = new OdbcCommand(comando, cn.Conexion());
                 OdbcDataReader queryResultsReader = command.ExecuteReader();
@@ -80,22 +80,63 @@ namespace CapaLogica
             {
                 // Mostrando mensaje que indica el error 
                 MessageBox.Show(ex.Message);
+                MessageBox.Show("Error ContarSubobjetivos");
             }
 
             return totalSubobjetivos;
+        }
+        public int contarObjetivos(int idDominio)
+        {
+            /* Autor: Victor Fernandez
+             * Fecha: 27/10/2019
+             * 
+             * Descripcion: Funcion para devolver el numero de objetivos dependiendo
+             * el dominio seleccionado
+             * ...
+             * 
+             */
+
+            int totalObjetivos = 0;
+
+            try
+            {
+                ConectarServidor cn = new ConectarServidor();
+                string comando = "SELECT COUNT(Nombre) AS NumeroObjetivos FROM tbl_objetivo WHERE tbl_dominio_PK_Id_dominio = " + Convert.ToString(idDominio);
+
+                OdbcCommand command = new OdbcCommand(comando, cn.Conexion());
+                OdbcDataReader queryResultsReader = command.ExecuteReader();
+
+                while (queryResultsReader.Read())
+                {
+                    // Conviertiendo el resultado a entero para poder enviarlo en el return 
+                    totalObjetivos = Convert.ToInt32(queryResultsReader.GetString(0));
+                }
+
+            }
+
+            catch (Exception ex)
+            {
+                // Mostrando mensaje que indica el error 
+                MessageBox.Show(ex.Message);
+                MessageBox.Show("Error ContarObjetivos");
+            }
+
+            return totalObjetivos;
         }
         public double calcularValorPorcentualSubobjetivo(int idObjetivo)
         {
             /* Autor: Victor Fernandez
              * Fecha: 27/10/2019
              * 
-             * Descripcion: Funcion para devolver el valor porcentual de cada objetivo
+             * Descripcion: Funcion para devolver el valor porcentual de cada subobjetivo o objetivos
              * Por ejemplo: Si el objetivo 1 tiene 15 subobjetivos, cada subobjetivo tendria
              * un valor de 6.6666667
              * ...
              * 
              */
             int porcentajeTotal = 100;
+
+
             double valorPorcentualSubobjetivo = porcentajeTotal / contarSubobjetivos(idObjetivo);
 
             return valorPorcentualSubobjetivo;
@@ -111,7 +152,7 @@ namespace CapaLogica
              * 
              */
 
-            string tabla = "";
+            string tabla = " ";
 
             if (Cbo_seleccion.SelectedIndex == 0)
             {
@@ -161,7 +202,7 @@ namespace CapaLogica
                     ConectarServidor miConexion = new ConectarServidor();
                     string sentencia = "SELECT Progreso FROM " + ObtenerNombreTabla(Cbo_seleccion) +
                                        " WHERE Nombre = " + "'" +
-                                       Convert.ToString(Lst_datos_grafica.Items[i] + "'");
+                                       Convert.ToString(Lst_datos_grafica.Items[i]) + "'";
 
                     OdbcCommand comando = new OdbcCommand(sentencia, miConexion.Conexion());
                     OdbcDataReader lector_query = comando.ExecuteReader();
@@ -175,13 +216,190 @@ namespace CapaLogica
                 catch (Exception ex)
                 {
                     MessageBox.Show(ex.Message);
+                    MessageBox.Show("Error ObtenerProgresoFromListBox");
                 }           
             }
             return progreso;
         }
+        public void CalcularAvanceObjetivos(ListBox datos_a_graficar)
+        {
+            /* Autor: Victor Fernandez
+             * Fecha: 29/10/2019
+             * Descripcion: Funcion para calcular el avance de objetivos
+             */
+
+            int numeroObjetivo = 0;
+            int numeroDeDatosAGraficar = datos_a_graficar.Items.Count;
+
+            double valorPorcentual = 0;
+            double avanceObjetivo = 0;
+
+            
 
 
-  
+            for (int i = 0; i < numeroDeDatosAGraficar; i++) {
+
+                try
+                {
+
+                    ConectarServidor cn = new ConectarServidor();
+
+                    // Obteniendo el valor porcentual de cada subobjetivo
+
+                        // Obteniedo el numero de subobjetivos de cada objetivo
+
+                    
+
+                    string comando_obtener_id_objetivo = "SELECT PK_Id_Objetivo FROM tbl_objetivo " +
+                                                         " WHERE Nombre = " + "'" + datos_a_graficar.Items[i] + "'";
+
+                
+                
+
+                    OdbcCommand command = new OdbcCommand(comando_obtener_id_objetivo, cn.Conexion());
+                    OdbcDataReader queryResultsReader = command.ExecuteReader();
+
+
+                    while (queryResultsReader.Read())
+                    {
+                        // Numero de subobjetivos 
+                        numeroObjetivo = (Convert.ToInt32(queryResultsReader.GetString(0)));
+                    }
+
+                    
+
+                }
+
+                catch (Exception ex)
+                {
+                    // Mostrando mensaje que indica el error 
+                    MessageBox.Show(ex.Message);
+                    MessageBox.Show("CalcularAvanceObjetivos");
+                }
+
+                try
+                {
+                    ConectarServidor cn = new ConectarServidor();
+
+                    valorPorcentual = calcularValorPorcentualSubobjetivo(numeroObjetivo);
+
+                    string comando = "SELECT Progreso FROM tbl_subobjetivo " +
+                                 "WHERE tbl_objetivo_PK_Id_Objetivo = " +
+                                 "(SELECT PK_Id_Objetivo FROM tbl_objetivo " +
+                                 "WHERE Nombre = " + "'" + datos_a_graficar.Items[i] + "')";
+
+
+
+                    // Sumando el valor de cada subobjetivo perteneciente al respectivo objetivo
+
+                    OdbcCommand command = new OdbcCommand(comando, cn.Conexion());
+                    OdbcDataReader queryResultsReader = command.ExecuteReader();
+
+                    while (queryResultsReader.Read())
+                    {
+                        avanceObjetivo += (Convert.ToDouble(queryResultsReader.GetString(0)) / 100) * valorPorcentual;
+                    }
+
+                    comando = "UPDATE tbl_objetivo " +
+                              " SET Progreso = " + Convert.ToString(avanceObjetivo) +
+                              " WHERE Nombre = " + "'" + datos_a_graficar.Items[i] + "'";
+
+
+
+                    command = new OdbcCommand(comando, cn.Conexion());
+                    queryResultsReader = command.ExecuteReader();
+                    
+                }
+                catch (Exception ex)
+                {
+                    // Mostrando mensaje que indica el error 
+                    MessageBox.Show(ex.Message);
+                    MessageBox.Show("CalcularAvanceObjetivos2");
+                }
+            }
+
+      
+
+        }
+
+        public void CalcularAvanceDominios(ListBox datos_a_graficar)
+        {
+            /* Autor: Victor Fernandez
+             * Fecha: 29/10/2019
+             * Descripcion: Funcion para calcular el avance de dominios 
+             */
+
+            int numeroDominio = 0;
+            int numeroDeDatosAGraficar = datos_a_graficar.Items.Count;
+
+            double valorPorcentual = 0;
+            double avanceDominio = 0;
+
+
+            // modificar para que calcule avance de dominios
+
+            for (int i = 0; i < numeroDeDatosAGraficar; i++)
+            {
+
+                try
+                {
+
+                    ConectarServidor cn = new ConectarServidor();
+
+                    // Obteniendo el valor porcentual de cada objetivo
+
+                        // Obteniedo el numero de objetivos de cada dominio
+
+                    string comando_obtener_id_dominio = "SELECT PK_Id_dominio FROM tbl_dominio" +
+                                                               " WHERE Nombre = " + "'" + datos_a_graficar.Items[i] + "'";
+
+                    string comando = "SELECT Progreso FROM tbl_objetivo " +
+                                     "WHERE tbl_dominio_PK_Id_dominio = " +
+                                     "                                          (SELECT PK_Id_dominio FROM tbl_dominio " +
+                                     "                                          WHERE Nombre = " + "'" + datos_a_graficar.Items[i] + "'";
+
+                    OdbcCommand command = new OdbcCommand(comando_obtener_id_dominio, cn.Conexion());
+                    OdbcDataReader queryResultsReader = command.ExecuteReader();
+
+                    while (queryResultsReader.Read())
+                    {
+                        // Numero de subobjetivos 
+                        numeroDominio = (Convert.ToInt32(queryResultsReader.GetString(0)));
+                    }
+
+                    valorPorcentual = calcularValorPorcentualSubobjetivo(numeroDominio);
+
+                    // Sumando el valor de cada subobjetivo perteneciente al respectivo objetivo
+
+                    command = new OdbcCommand(comando, cn.Conexion());
+                    queryResultsReader = command.ExecuteReader();
+
+                    while (queryResultsReader.Read())
+                    {
+                        avanceDominio += (Convert.ToInt32(queryResultsReader.GetString(0)) / 100) * valorPorcentual;
+                    }
+
+
+
+                    comando = "UPDATE tbl_dominio" +
+                              " SET Progreso = " + Convert.ToString(avanceDominio) +
+                              " WHERE Nombre = " + "'" + datos_a_graficar.Items[i] + "'";
+
+                    command = new OdbcCommand(comando, cn.Conexion());
+                    queryResultsReader = command.ExecuteReader();
+
+                }
+
+                catch (Exception ex)
+                {
+                    // Mostrando mensaje que indica el error 
+                    MessageBox.Show(ex.Message);
+                    MessageBox.Show("Error CalcularAvanceDominios");
+                }
+            }
+
+        }
+
 
     }
 }
