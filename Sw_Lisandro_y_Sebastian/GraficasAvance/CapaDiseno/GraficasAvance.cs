@@ -30,6 +30,37 @@ namespace CapaDiseno
             /*Logica logica = new Logica();
             logica.cargarComboBox(this, e, Cbo_dominios, "SELECT Nombre FROM bdauditoria.tbl_objetivo WHERE PK_Id_Objetivo > -1");
             */
+            ToolTip toolTip1 = new ToolTip();
+
+            // Set up the delays for the ToolTip.
+            toolTip1.AutoPopDelay = 5000;
+            toolTip1.InitialDelay = 1000;
+            toolTip1.ReshowDelay = 500;
+            // Force the ToolTip text to be displayed whether or not the form is active.
+            toolTip1.ShowAlways = true;
+
+            // Set up the ToolTip text for the Button and Checkbox.
+            toolTip1.SetToolTip(this.Btn_mover_derecha, "Mueve un elemento a \n" +
+                                                        "a la lista de datos a graficar");
+
+            toolTip1.SetToolTip(this.Btn_mover_todos_derecha, "Mueve todos los elementos a \n" +
+                                                              "a la lista de datos a graficar");
+
+            toolTip1.SetToolTip(this.Btn_mover_izquierda, "Mueve un elemento a \n" +
+                                                          "a la lista de datos");
+
+            toolTip1.SetToolTip(this.Btn_mover_todos_izquierda, "Mueve todos los elementos a \n" +
+                                                              "a la lista de datos");
+
+            toolTip1.SetToolTip(this.Cbo_seleccion,  "Muestra secciones de la norma \n" +
+                                                     "disponibles as escoger");
+
+            toolTip1.SetToolTip(this.Cbo_tipo_grafica, "Muestra tipos de graficas disponibles \n" +
+                                                       "para mostrar los datos");
+
+            toolTip1.SetToolTip(this.Btn_crear_grafica, "Crea una grafica con los datos de la \n" +
+                                                        "lista de datos a graficar");
+
         }
         private void Cbo_seleccion_SelectedIndexChanged(object sender, EventArgs e)
         {
