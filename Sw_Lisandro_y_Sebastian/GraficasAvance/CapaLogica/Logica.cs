@@ -264,13 +264,16 @@ namespace CapaLogica
             for (int i = 0; i < numeroDeDatosAGraficar; i++) {
                 try
                 {
+                    // Reiniciando el avance para poder calcular el siguiente avance
+                    avanceObjetivo = 0;
+
                     ConectarServidor cn = new ConectarServidor();
                     // Obteniendo el valor porcentual de cada subobjetivo
 
                         // Obteniedo el numero de subobjetivos de cada objetivo
 
                     string comando_obtener_id_objetivo = "SELECT PK_Id_Objetivo FROM tbl_objetivo " +
-                                                         " WHERE Nombre = " + "'" + datos_a_graficar.Items[i] + "'";
+                                                         " WHERE Nombre = " + "'" + datos_a_graficar.Items[i] + "'"; 
 
                     OdbcCommand command = new OdbcCommand(comando_obtener_id_objetivo, cn.Conexion());
                     OdbcDataReader queryResultsReader = command.ExecuteReader();
@@ -355,6 +358,8 @@ namespace CapaLogica
 
                 try
                 {
+                    // Reiniciando el avance para poder calcular el siguiente avance
+                    avanceDominio = 0;
 
                     ConectarServidor cn = new ConectarServidor();
 
