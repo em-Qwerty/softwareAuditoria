@@ -19,7 +19,7 @@ using System.Windows.Forms.DataVisualization.Charting;
 
 namespace CapaDiseno
 {
-    public partial class GraficasAvance : UserControl
+    public partial class GraficasAvance : Form
     {
         public GraficasAvance()
         {
@@ -293,9 +293,6 @@ namespace CapaDiseno
         }
         private void Btn_crear_grafica_Click(object sender, EventArgs e)
         {
-            if (Cbo_tipo_grafica.SelectedIndex == 0)
-            {
-
                 if (Cbo_seleccion.SelectedIndex == 1)
                 {
                     Logica plogica = new Logica();
@@ -310,28 +307,10 @@ namespace CapaDiseno
                 }
 
                 CrearGraficaBarras(Lst_datos_grafica, Cbo_seleccion);
-            }
+        }
 
-
-            else
-            {
-                if (Cbo_seleccion.SelectedIndex == 1)
-                {
-                    Logica plogica = new Logica();
-                    plogica.CalcularAvanceObjetivos(Lst_datos_grafica);
-                    plogica.CalcularAvanceDominios(Lst_datos_grafica);
-                }
-
-                if (Cbo_seleccion.SelectedIndex == 2)
-                {
-                    Logica plogica = new Logica();
-                    plogica.CalcularAvanceObjetivos(Lst_datos_grafica);
-                }
-
-                CrearGraficaBarras(Lst_datos_grafica, Cbo_seleccion);
-            }
-
-
+        private void Ventana1_Load(object sender, EventArgs e)
+        {
 
         }
     }

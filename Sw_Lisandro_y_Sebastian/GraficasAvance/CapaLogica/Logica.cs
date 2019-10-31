@@ -63,7 +63,7 @@ namespace CapaLogica
             try
             {
                 ConectarServidor cn = new ConectarServidor();
-                string comando = "SELECT COUNT(Nombre) AS NumeroSubobjetivos FROM tbl_subobjetivo WHERE tbl_objetivo_PK_Id_objetivo =" + Convert.ToString(idObjetivo);
+                string comando = "SELECT COUNT(Nombre) FROM tbl_subobjetivo WHERE tbl_objetivo_PK_Id_objetivo =" + Convert.ToString(idObjetivo);
 
                 OdbcCommand command = new OdbcCommand(comando, cn.Conexion());
                 OdbcDataReader queryResultsReader = command.ExecuteReader();
@@ -101,7 +101,8 @@ namespace CapaLogica
             try
             {
                 ConectarServidor cn = new ConectarServidor();
-                string comando = "SELECT COUNT(Nombre) AS NumeroObjetivos FROM tbl_objetivo WHERE tbl_dominio_PK_Id_dominio = " + Convert.ToString(idDominio);
+                string comando = "SELECT COUNT(Nombre) FROM tbl_objetivo " +
+                                 "WHERE tbl_dominio_PK_Id_dominio = " + Convert.ToString(idDominio);
 
                 OdbcCommand command = new OdbcCommand(comando, cn.Conexion());
                 OdbcDataReader queryResultsReader = command.ExecuteReader();
@@ -138,15 +139,11 @@ namespace CapaLogica
             int porcentajeTotal = 100;
             double valorPorcentualSubobjetivo = 0;
 
-            // Evitando division entre 0
-            //if (contarSubobjetivos(idObjetivo) != 0)
-            //{ 
-                valorPorcentualSubobjetivo = porcentajeTotal / contarSubobjetivos(idObjetivo);
-            //} 
-            //else
-            //{
-                valorPorcentualSubobjetivo = 0.00001;
-            //}
+            /* Evitando division entre 0 */
+            if (contarSubobjetivos(idObjetivo) != 0)
+            {
+                return valorPorcentualSubobjetivo = porcentajeTotal / contarSubobjetivos(idObjetivo);
+            }
 
             return valorPorcentualSubobjetivo;
         }
@@ -155,22 +152,19 @@ namespace CapaLogica
             /* Autor: Victor Fernandez
              * Fecha: 27/10/2019
              * 
-             * Descripcion: Funcion para devolver el valor porcentual de cada objetivos
-             * 
-             * ...
+             * Descripcion: Funcion para devolver el valor porcentual de cada objetivo
              * 
              */
 
             int porcentajeTotal = 100;
             double valorPorcentualObjetivo = 0;
 
-            // Evitando division entre 0
+            /* Evitando division entre 0 */
+            if (contarObjetivos(idDominio) != 0)
+            {
+                return valorPorcentualObjetivo = porcentajeTotal / contarObjetivos(idDominio);
+            }
 
-            //if (contarObjetivos(idDominio) != 0)
-            //{
-                valorPorcentualObjetivo = porcentajeTotal / contarObjetivos(idDominio);
-            //}
-           
             return valorPorcentualObjetivo;
         }
         public string ObtenerNombreTabla(ComboBox Cbo_seleccion)
@@ -179,12 +173,12 @@ namespace CapaLogica
              * Fecha: 28/10/2019
              * 
              * Descripcion: Funcion para obtner el nombre de la tabla
-             * en la base de datos, dependiendo la seleccion 
+             * en la base de datos, dependiendo la seleccion del combobox
              * ...
              * 
              */
 
-            string tabla = " ";
+            string tabla = "";
 
             if (Cbo_seleccion.SelectedIndex == 0)
             {
@@ -216,16 +210,17 @@ namespace CapaLogica
              * 
              */
 
+            
             string[] datos_grafica = Lst_datos_grafica.Items.OfType<string>().ToArray();
+
+            /* Cambiarlo, hacerlo dinamico*/
             string[] progreso = new string[2500];
+
             int itemsTotal = Lst_datos_grafica.Items.Count;
 
             /* Obteniendo el progreso por cada item en Lst_datos_grafica y guardandolo
              * en un arreglo
-             * 
-             */
-
-         
+             */    
 
             for (int i = 0; i < datos_grafica.Length; i++)
             {
@@ -266,27 +261,16 @@ namespace CapaLogica
             double valorPorcentual = 0;
             double avanceObjetivo = 0;
 
-            
-
-
             for (int i = 0; i < numeroDeDatosAGraficar; i++) {
-
                 try
                 {
-
                     ConectarServidor cn = new ConectarServidor();
-
                     // Obteniendo el valor porcentual de cada subobjetivo
 
                         // Obteniedo el numero de subobjetivos de cada objetivo
 
-                    
-
                     string comando_obtener_id_objetivo = "SELECT PK_Id_Objetivo FROM tbl_objetivo " +
                                                          " WHERE Nombre = " + "'" + datos_a_graficar.Items[i] + "'";
-
-                
-                
 
                     OdbcCommand command = new OdbcCommand(comando_obtener_id_objetivo, cn.Conexion());
                     OdbcDataReader queryResultsReader = command.ExecuteReader();
@@ -297,9 +281,6 @@ namespace CapaLogica
                         // Numero de subobjetivos 
                         numeroObjetivo = (Convert.ToInt32(queryResultsReader.GetString(0)));
                     }
-
-                    
-
                 }
 
                 catch (Exception ex)

@@ -53,7 +53,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="GraficasAvance.cs">
-      <SubType>UserControl</SubType>
+      <SubType>Form</SubType>
     </Compile>
     <Compile Include="GraficasAvance.Designer.cs">
       <DependentUpon>GraficasAvance.cs</DependentUpon>
