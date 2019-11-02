@@ -40,6 +40,8 @@ namespace CapaLogica
                     cmbx.Items.Add(queryResultsReader.GetString(0));
                 }
 
+                cn.CerrarConexion();
+
             }
             catch (Exception ex)
             {
@@ -74,6 +76,7 @@ namespace CapaLogica
                    totalSubobjetivos = Convert.ToInt32(queryResultsReader.GetString(0));
                 }
 
+                cn.CerrarConexion();
             }
 
             catch (Exception ex)
@@ -112,6 +115,8 @@ namespace CapaLogica
                     // Conviertiendo el resultado a entero para poder enviarlo en el return 
                     totalObjetivos = Convert.ToInt32(queryResultsReader.GetString(0));
                 }
+
+                cn.CerrarConexion();
 
             }
 
@@ -239,6 +244,8 @@ namespace CapaLogica
                         progreso[i] = lector_query.GetString(0);
                     }
 
+                    miConexion.CerrarConexion();
+
                 }
                 catch (Exception ex)
                 {
@@ -284,6 +291,8 @@ namespace CapaLogica
                         // Numero de subobjetivos 
                         numeroObjetivo = (Convert.ToInt32(queryResultsReader.GetString(0)));
                     }
+
+                    cn.CerrarConexion();
                 }
 
                 catch (Exception ex)
@@ -324,7 +333,9 @@ namespace CapaLogica
 
                     command = new OdbcCommand(comando, cn.Conexion());
                     queryResultsReader = command.ExecuteReader();
-                    
+
+                    cn.CerrarConexion();
+
                 }
                 catch (Exception ex)
                 {
@@ -386,7 +397,7 @@ namespace CapaLogica
                     }
 
 
-
+                    cn.CerrarConexion();
                 }
 
                 catch (Exception ex)
@@ -428,7 +439,8 @@ namespace CapaLogica
                     command = new OdbcCommand(comando, cn.Conexion());
                     queryResultsReader = command.ExecuteReader();
 
-                    
+                    cn.CerrarConexion();
+
 
                 }
                 catch (Exception ex)

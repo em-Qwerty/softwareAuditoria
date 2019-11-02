@@ -31,6 +31,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CapaDisenoNavegador">
+      <HintPath>..\..\..\..\..\Documents\GitHub\softwareAuditoria-master\Sw_Abner_Portillo\Abner Portillo\bin\Debug\CapaDisenoNavegador.dll</HintPath>
+    </Reference>
     <Reference Include="MySql.Data, Version=8.0.16.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\..\..\Downloads\CapacitacionMVC-DLL-master\CapacitacionMVC-DLL-master\CAPACITACION DLL\MySql.Data.dll</HintPath>

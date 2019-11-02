@@ -61,6 +61,8 @@ namespace CapaDiseno
             toolTip1.SetToolTip(this.Btn_crear_grafica, "Crea una grafica con los datos de la \n" +
                                                         "lista de datos a graficar");
 
+
+
         }
         private void Cbo_seleccion_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -96,6 +98,8 @@ namespace CapaDiseno
                         Lst_datos_a_elegir.Items.Add(queryResultsReader.GetString(0));
                     }
 
+                    cn.CerrarConexion();
+
                 }
                 catch (Exception ex)
                 {
@@ -124,6 +128,8 @@ namespace CapaDiseno
 
                         Lst_datos_a_elegir.Items.Add(queryResultsReader.GetString(0));
                     }
+
+                    cn.CerrarConexion();
 
                 }
                 catch (Exception ex)
@@ -154,6 +160,8 @@ namespace CapaDiseno
                         Lst_datos_a_elegir.Items.Add(queryResultsReader.GetString(0));
                     }
 
+                    cn.CerrarConexion();
+
                 }
                 catch (Exception ex)
                 {
@@ -183,12 +191,15 @@ namespace CapaDiseno
                         Lst_datos_a_elegir.Items.Add(queryResultsReader.GetString(0));
                     }
 
+                    cn.CerrarConexion();
+
                 }
                 catch (Exception ex)
                 {
                     // Mostrando mensaje que indica el error 
                     MessageBox.Show(ex.Message);
                 }
+                
             }
 
 
@@ -203,7 +214,7 @@ namespace CapaDiseno
 
             if (Lst_datos_a_elegir.SelectedIndex == -1)
             {
-                MessageBox.Show("Seleccionar item");
+                MessageBox.Show("Debe de seleccionar un item");
             }
             else
             {
@@ -280,14 +291,30 @@ namespace CapaDiseno
             Chart_avance.Series.Clear();
             Chart_avance.Titles.Clear();
 
-            for (int i = 0; i < Lst_datos_grafica.Items.Count; i++)
-            {
-                Chart_avance.Series.Add(Convert.ToString(miListBox.Items[i]));
-                Chart_avance.Series[Convert.ToString(miListBox.Items[i])].Points.AddXY(miListBox.Items[i],
-                                                    pLogica.ObtenerProgresoFromListBox(Lst_datos_grafica, 
-                                                    seleccion)[i]);
+            Chart_avance.ChartAreas[0].AxisX.Title = seleccion.SelectedText;
+            Chart_avance.ChartAreas[0].AxisY.Title = "Avance (%)";
+
+
+            Chart_avance.ChartAreas[0].AxisX.IsLabelAutoFit = false;
+            Chart_avance.ChartAreas[0].AxisX.Interval = 1;
+           
+            Chart_avance.ChartAreas[0].AxisX.LabelStyle.Angle = -35;
+            Chart_avance.Series.Add("Progreso");
+            
+             for (int i = 0; i < Lst_datos_grafica.Items.Count; i++)
+             {
+               
+                 // Chart_avance.Series.Add(Convert.ToString(miListBox.Items[i]));
+                 /*Chart_avance.Series[Convert.ToString(miListBox.Items[i])].Points.AddXY(miListBox.Items[i],
+                                     pLogica.ObtenerProgresoFromListBox(Lst_datos_grafica, seleccion)[i]);*/
+
+
+                Chart_avance.Series["Progreso"].Points.AddXY(miListBox.Items[i],
+                                     pLogica.ObtenerProgresoFromListBox(Lst_datos_grafica, seleccion)[i]);
 
             }
+             
+
 
             Chart_avance.Titles.Add("Porcentaje de avance " + Convert.ToString(Cbo_seleccion.SelectedItem));
         }
