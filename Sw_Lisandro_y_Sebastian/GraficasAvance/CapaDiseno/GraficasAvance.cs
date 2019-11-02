@@ -52,7 +52,7 @@ namespace CapaDiseno
             toolTip1.SetToolTip(this.Btn_mover_todos_izquierda, "Mueve todos los elementos a \n" +
                                                               "a la lista de datos");
 
-            toolTip1.SetToolTip(this.Cbo_seleccion,  "Muestra secciones de la norma \n" +
+            toolTip1.SetToolTip(this.Cbo_seleccion, "Muestra secciones de la norma \n" +
                                                      "disponibles as escoger");
 
             toolTip1.SetToolTip(this.Cbo_tipo_grafica, "Muestra tipos de graficas disponibles \n" +
@@ -82,7 +82,7 @@ namespace CapaDiseno
                 // Si la opcion normativa es seleccionada, mostrar todas las normativas almacenadas
 
                 // Borrando datos anteriores del listbox
-                Lst_datos_a_elegir.Items.Clear(); 
+                Lst_datos_a_elegir.Items.Clear();
 
                 try
                 {
@@ -199,7 +199,7 @@ namespace CapaDiseno
                     // Mostrando mensaje que indica el error 
                     MessageBox.Show(ex.Message);
                 }
-                
+
             }
 
 
@@ -252,7 +252,7 @@ namespace CapaDiseno
              * Descripcion: Mueve todos los items de la lst_datos_a_elegir a lst_datos_grafica 
              * 
              */
-           
+
             for (int j = 0; j <= Lst_datos_a_elegir.Items.Count - 1; j++)
             {
                 Lst_datos_grafica.Items.Add(Lst_datos_a_elegir.Items[j]);
@@ -297,29 +297,193 @@ namespace CapaDiseno
 
             Chart_avance.ChartAreas[0].AxisX.IsLabelAutoFit = false;
             Chart_avance.ChartAreas[0].AxisX.Interval = 1;
-           
+
             Chart_avance.ChartAreas[0].AxisX.LabelStyle.Angle = -35;
             Chart_avance.Series.Add("Progreso");
-            
-             for (int i = 0; i < Lst_datos_grafica.Items.Count; i++)
-             {
-               
-                 // Chart_avance.Series.Add(Convert.ToString(miListBox.Items[i]));
-                 /*Chart_avance.Series[Convert.ToString(miListBox.Items[i])].Points.AddXY(miListBox.Items[i],
-                                     pLogica.ObtenerProgresoFromListBox(Lst_datos_grafica, seleccion)[i]);*/
 
-
+            for (int i = 0; i < Lst_datos_grafica.Items.Count; i++)
+            {
                 Chart_avance.Series["Progreso"].Points.AddXY(miListBox.Items[i],
                                      pLogica.ObtenerProgresoFromListBox(Lst_datos_grafica, seleccion)[i]);
 
             }
-             
+
+
+
+            Chart_avance.Titles.Add("Porcentaje de avance " + Convert.ToString(Cbo_seleccion.SelectedItem));
+        }
+
+        private void CrearGraficaRadar(ListBox miListBox, ComboBox seleccion)
+        {
+            /* Autor: Victor Fernandez
+             * Fecha: 28/10/2019
+             * 
+             * Descripcion: Metodo para crear una grafica basandose en la seleccion del
+             * primer ComboBox
+             * ...
+             * 
+             */
+
+            Logica pLogica = new Logica();
+
+
+            // Eliminando grafica anterior
+            Chart_avance.Series.Clear();
+            Chart_avance.Titles.Clear();
+
+            Chart_avance.Series.Add("Progreso");
+
+            Chart_avance.Series["Progreso"].ChartType =
+            System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Radar;
+
+            for (int i = 0; i < Lst_datos_grafica.Items.Count; i++)
+            {
+                Chart_avance.Series["Progreso"].Points.AddXY(miListBox.Items[i],
+                                     pLogica.ObtenerProgresoFromListBox(Lst_datos_grafica, seleccion)[i]);
+
+            }
+
+            Chart_avance.Titles.Add("Porcentaje de avance " + Convert.ToString(Cbo_seleccion.SelectedItem));
+        }
+        private void CrearGraficaPie(ListBox miListBox, ComboBox seleccion)
+        {
+            /* Autor: Victor Fernandez
+             * Fecha: 28/10/2019
+             * 
+             * Descripcion: Metodo para crear una grafica basandose en la seleccion del
+             * primer ComboBox
+             * ...
+             * 
+             */
+
+            Logica pLogica = new Logica();
+
+
+            // Eliminando grafica anterior
+            Chart_avance.Series.Clear();
+            Chart_avance.Titles.Clear();
+
+            Chart_avance.ChartAreas[0].AxisX.Title = seleccion.SelectedText;
+            Chart_avance.ChartAreas[0].AxisY.Title = "Avance (%)";
+
+
+            Chart_avance.ChartAreas[0].AxisX.IsLabelAutoFit = false;
+            Chart_avance.ChartAreas[0].AxisX.Interval = 1;
+
+            Chart_avance.ChartAreas[0].AxisX.LabelStyle.Angle = -35;
+            Chart_avance.Series.Add("Progreso");
+
+            Chart_avance.Series["Progreso"].ChartType =
+            System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
+
+
+
+            for (int i = 0; i < Lst_datos_grafica.Items.Count; i++)
+            {
+                Chart_avance.Series["Progreso"].Points.AddXY(miListBox.Items[i],
+                                     pLogica.ObtenerProgresoFromListBox(Lst_datos_grafica, seleccion)[i]);
+
+            }
+
+
+
+            Chart_avance.Titles.Add("Porcentaje de avance " + Convert.ToString(Cbo_seleccion.SelectedItem));
+        }
+        private void CrearGraficaDona(ListBox miListBox, ComboBox seleccion)
+        {
+            /* Autor: Victor Fernandez
+             * Fecha: 28/10/2019
+             * 
+             * Descripcion: Metodo para crear una grafica basandose en la seleccion del
+             * primer ComboBox
+             * ...
+             * 
+             */
+
+            Logica pLogica = new Logica();
+
+
+            // Eliminando grafica anterior
+            Chart_avance.Series.Clear();
+            Chart_avance.Titles.Clear();
+
+            Chart_avance.ChartAreas[0].AxisX.Title = seleccion.SelectedText;
+            Chart_avance.ChartAreas[0].AxisY.Title = "Avance (%)";
+
+
+            Chart_avance.ChartAreas[0].AxisX.IsLabelAutoFit = false;
+            Chart_avance.ChartAreas[0].AxisX.Interval = 1;
+
+            Chart_avance.ChartAreas[0].AxisX.LabelStyle.Angle = -35;
+            Chart_avance.Series.Add("Progreso");
+
+            Chart_avance.Series["Progreso"].ChartType =
+            System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Doughnut;
+
+
+
+            for (int i = 0; i < Lst_datos_grafica.Items.Count; i++)
+            {
+                Chart_avance.Series["Progreso"].Points.AddXY(miListBox.Items[i],
+                                     pLogica.ObtenerProgresoFromListBox(Lst_datos_grafica, seleccion)[i]);
+
+            }
+
+
+
+            Chart_avance.Titles.Add("Porcentaje de avance " + Convert.ToString(Cbo_seleccion.SelectedItem));
+        }
+        private void CrearGraficaArea(ListBox miListBox, ComboBox seleccion)
+        {
+            /* Autor: Victor Fernandez
+             * Fecha: 28/10/2019
+             * 
+             * Descripcion: Metodo para crear una grafica basandose en la seleccion del
+             * primer ComboBox
+             * ...
+             * 
+             */
+
+            Logica pLogica = new Logica();
+
+
+            // Eliminando grafica anterior
+            Chart_avance.Series.Clear();
+            Chart_avance.Titles.Clear();
+
+            Chart_avance.ChartAreas[0].AxisX.Title = seleccion.SelectedText;
+            Chart_avance.ChartAreas[0].AxisY.Title = "Avance (%)";
+
+
+            Chart_avance.ChartAreas[0].AxisX.IsLabelAutoFit = false;
+            Chart_avance.ChartAreas[0].AxisX.Interval = 1;
+
+            Chart_avance.ChartAreas[0].AxisX.LabelStyle.Angle = -35;
+            Chart_avance.Series.Add("Progreso");
+
+            Chart_avance.Series["Progreso"].ChartType =
+            System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Area;
+
+
+
+            for (int i = 0; i < Lst_datos_grafica.Items.Count; i++)
+            {
+                Chart_avance.Series["Progreso"].Points.AddXY(miListBox.Items[i],
+                                     pLogica.ObtenerProgresoFromListBox(Lst_datos_grafica, seleccion)[i]);
+
+            }
+
 
 
             Chart_avance.Titles.Add("Porcentaje de avance " + Convert.ToString(Cbo_seleccion.SelectedItem));
         }
         private void Btn_crear_grafica_Click(object sender, EventArgs e)
         {
+
+            // Grafica barras
+            if (Cbo_tipo_grafica.SelectedIndex == 0)
+            {
+
                 if (Cbo_seleccion.SelectedIndex == 1)
                 {
                     Logica plogica = new Logica();
@@ -334,9 +498,116 @@ namespace CapaDiseno
                 }
 
                 CrearGraficaBarras(Lst_datos_grafica, Cbo_seleccion);
+
+            }
+
+            // Opcion Grafica pie
+            else if (Cbo_tipo_grafica.SelectedIndex == 1)
+            {
+
+                if (Cbo_seleccion.SelectedIndex == 1)
+                {
+                    Logica plogica = new Logica();
+                    plogica.CalcularAvanceObjetivos(Lst_datos_grafica);
+                    plogica.CalcularAvanceDominios(Lst_datos_grafica);
+                }
+
+                if (Cbo_seleccion.SelectedIndex == 2)
+                {
+                    Logica plogica = new Logica();
+                    plogica.CalcularAvanceObjetivos(Lst_datos_grafica);
+                }
+
+                CrearGraficaPie(Lst_datos_grafica, Cbo_seleccion);
+
+            }
+
+            // Opcion Grafica Radar
+            else if (Cbo_tipo_grafica.SelectedIndex == 2)
+            {
+
+                if (Cbo_seleccion.SelectedIndex == 1)
+                {
+                    Logica plogica = new Logica();
+                    plogica.CalcularAvanceObjetivos(Lst_datos_grafica);
+                    plogica.CalcularAvanceDominios(Lst_datos_grafica);
+                }
+
+                if (Cbo_seleccion.SelectedIndex == 2)
+                {
+                    Logica plogica = new Logica();
+                    plogica.CalcularAvanceObjetivos(Lst_datos_grafica);
+                }
+
+                CrearGraficaRadar(Lst_datos_grafica, Cbo_seleccion);
+
+            }
+
+            // Opcion Grafica de Dona
+            else if (Cbo_tipo_grafica.SelectedIndex == 3)
+            {
+
+                if (Cbo_seleccion.SelectedIndex == 1)
+                {
+                    Logica plogica = new Logica();
+                    plogica.CalcularAvanceObjetivos(Lst_datos_grafica);
+                    plogica.CalcularAvanceDominios(Lst_datos_grafica);
+                }
+
+                if (Cbo_seleccion.SelectedIndex == 2)
+                {
+                    Logica plogica = new Logica();
+                    plogica.CalcularAvanceObjetivos(Lst_datos_grafica);
+                }
+
+                CrearGraficaDona(Lst_datos_grafica, Cbo_seleccion);
+
+            }
+
+            // Opcion grafica de area
+            else if (Cbo_tipo_grafica.SelectedIndex == 4)
+            {
+
+                if (Cbo_seleccion.SelectedIndex == 1)
+                {
+                    Logica plogica = new Logica();
+                    plogica.CalcularAvanceObjetivos(Lst_datos_grafica);
+                    plogica.CalcularAvanceDominios(Lst_datos_grafica);
+                }
+
+                if (Cbo_seleccion.SelectedIndex == 2)
+                {
+                    Logica plogica = new Logica();
+                    plogica.CalcularAvanceObjetivos(Lst_datos_grafica);
+                }
+
+                CrearGraficaArea(Lst_datos_grafica, Cbo_seleccion);
+
+            }
+
+            // Default: Grafica barras
+            else
+            {
+
+                if (Cbo_seleccion.SelectedIndex == 1)
+                {
+                    Logica plogica = new Logica();
+                    plogica.CalcularAvanceObjetivos(Lst_datos_grafica);
+                    plogica.CalcularAvanceDominios(Lst_datos_grafica);
+                }
+
+                if (Cbo_seleccion.SelectedIndex == 2)
+                {
+                    Logica plogica = new Logica();
+                    plogica.CalcularAvanceObjetivos(Lst_datos_grafica);
+                }
+
+                CrearGraficaBarras(Lst_datos_grafica, Cbo_seleccion);
+
+            }
         }
 
-        private void Ventana1_Load(object sender, EventArgs e)
+        private void Cbo_tipo_grafica_SelectedIndexChanged(Object sender, EventArgs e)
         {
 
         }
