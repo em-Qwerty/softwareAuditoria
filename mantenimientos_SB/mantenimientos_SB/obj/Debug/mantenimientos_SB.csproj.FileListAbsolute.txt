@@ -1,0 +1,15 @@
+c:\users\usuario\documents\visual studio 2015\Projects\mantenimientos_SB\mantenimientos_SB\bin\Debug\mantenimientos_SB.dll
+c:\users\usuario\documents\visual studio 2015\Projects\mantenimientos_SB\mantenimientos_SB\bin\Debug\mantenimientos_SB.pdb
+c:\users\usuario\documents\visual studio 2015\Projects\mantenimientos_SB\mantenimientos_SB\bin\Debug\ventanaDiseno.dll
+c:\users\usuario\documents\visual studio 2015\Projects\mantenimientos_SB\mantenimientos_SB\bin\Debug\CapaLogicaNavegador.dll
+c:\users\usuario\documents\visual studio 2015\Projects\mantenimientos_SB\mantenimientos_SB\bin\Debug\ConsultasInteligentes.dll
+c:\users\usuario\documents\visual studio 2015\Projects\mantenimientos_SB\mantenimientos_SB\bin\Debug\CapaDatosNavegador.dll
+c:\users\usuario\documents\visual studio 2015\Projects\mantenimientos_SB\mantenimientos_SB\obj\Debug\mantenimientos_SB.csprojResolveAssemblyReference.cache
+c:\users\usuario\documents\visual studio 2015\Projects\mantenimientos_SB\mantenimientos_SB\obj\Debug\mantenimientos_SB.mantenimiento_asignacionAuditorProyecto.resources
+c:\users\usuario\documents\visual studio 2015\Projects\mantenimientos_SB\mantenimientos_SB\obj\Debug\mantenimientos_SB.csproj.GenerateResource.Cache
+c:\users\usuario\documents\visual studio 2015\Projects\mantenimientos_SB\mantenimientos_SB\obj\Debug\mantenimientos_SB.dll
+c:\users\usuario\documents\visual studio 2015\Projects\mantenimientos_SB\mantenimientos_SB\obj\Debug\mantenimientos_SB.pdb
+c:\users\usuario\documents\visual studio 2015\Projects\mantenimientos_SB\mantenimientos_SB\obj\Debug\mantenimientos_SB.mantenimiento_asignacionRecursosTI.resources
+c:\users\usuario\documents\visual studio 2015\Projects\mantenimientos_SB\mantenimientos_SB\bin\Debug\Navegador_.pdb
+c:\users\usuario\documents\visual studio 2015\Projects\mantenimientos_SB\mantenimientos_SB\bin\Debug\CapaLogicaNavegador.pdb
+c:\users\usuario\documents\visual studio 2015\Projects\mantenimientos_SB\mantenimientos_SB\bin\Debug\CapaDatosNavegador.pdb
