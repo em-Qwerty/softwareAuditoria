@@ -14,6 +14,7 @@ using System.Collections;
 using System.Data.SqlClient;
 using System.Configuration;
 using System.Windows.Forms.DataVisualization.Charting;
+using ventanaDiseno;
 
 
 
@@ -21,8 +22,10 @@ namespace CapaDiseno
 {
     public partial class GraficasAvance : Form
     {
+        ventana ven = new ventana();
         public GraficasAvance()
         {
+            ven.pubSetName("Graficas de Avance del Proyecto");
             InitializeComponent();
         }
         private void GraficasAvance_Load(object sender, EventArgs e)
@@ -614,6 +617,11 @@ namespace CapaDiseno
         }
 
         private void Cbo_tipo_grafica_SelectedIndexChanged(Object sender, EventArgs e)
+        {
+
+        }
+
+        private void ventana1_Load(object sender, EventArgs e)
         {
 
         }

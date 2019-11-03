@@ -215,15 +215,16 @@
             this.ventana1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ventana1.Location = new System.Drawing.Point(0, 0);
             this.ventana1.Name = "ventana1";
-            this.ventana1.Size = new System.Drawing.Size(1202, 779);
+            this.ventana1.Size = new System.Drawing.Size(1202, 736);
             this.ventana1.TabIndex = 8;
+            this.ventana1.Load += new System.EventHandler(this.ventana1_Load);
             // 
             // GraficasAvance
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.ClientSize = new System.Drawing.Size(1202, 779);
+            this.ClientSize = new System.Drawing.Size(1202, 736);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Cbo_tipo_grafica);
             this.Controls.Add(this.Chart_avance);
@@ -240,7 +241,7 @@
             this.Controls.Add(this.ventana1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(2);
-            this.MinimumSize = new System.Drawing.Size(1202, 779);
+            this.MinimumSize = new System.Drawing.Size(1202, 736);
             this.Name = "GraficasAvance";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.GraficasAvance_Load);
