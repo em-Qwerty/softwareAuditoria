@@ -30,19 +30,16 @@ namespace CapaDiseno
         }
         private void GraficasAvance_Load(object sender, EventArgs e)
         {
-            /*Logica logica = new Logica();
-            logica.cargarComboBox(this, e, Cbo_dominios, "SELECT Nombre FROM bdauditoria.tbl_objetivo WHERE PK_Id_Objetivo > -1");
-            */
+            /* Creacion del ToolTip para cada boton
+             * Modificacion: Sebastian Recinos
+             * Fecha: 30/10/2019
+             */
             ToolTip toolTip1 = new ToolTip();
 
-            // Set up the delays for the ToolTip.
-            toolTip1.AutoPopDelay = 5000;
-            toolTip1.InitialDelay = 1000;
-            toolTip1.ReshowDelay = 500;
-            // Force the ToolTip text to be displayed whether or not the form is active.
             toolTip1.ShowAlways = true;
-
-            // Set up the ToolTip text for the Button and Checkbox.
+            // Muestra el ToolTip como un globo de texto
+            toolTip1.IsBalloon = true;
+            // Asigna el ToolTip a cada boton.
             toolTip1.SetToolTip(this.Btn_mover_derecha, "Mueve un elemento a \n" +
                                                         "a la lista de datos a graficar");
 
@@ -63,8 +60,10 @@ namespace CapaDiseno
 
             toolTip1.SetToolTip(this.Btn_crear_grafica, "Crea una grafica con los datos de la \n" +
                                                         "lista de datos a graficar");
-
-
+            toolTip1.SetToolTip(this.Lst_datos_a_elegir, "Datos disponibles para realizar \n" +
+                                                        "un grafica");
+            toolTip1.SetToolTip(this.Lst_datos_grafica, "Datos en la grafica a generar");
+            
 
         }
         private void Cbo_seleccion_SelectedIndexChanged(object sender, EventArgs e)
