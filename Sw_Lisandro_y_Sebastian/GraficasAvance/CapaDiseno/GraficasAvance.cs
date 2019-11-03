@@ -80,7 +80,7 @@ namespace CapaDiseno
             Lst_datos_grafica.Items.Clear();
 
 
-            if (Cbo_seleccion.SelectedIndex == 0)
+            /*if (Cbo_seleccion.SelectedIndex == 0)
             {
                 // Si la opcion normativa es seleccionada, mostrar todas las normativas almacenadas
 
@@ -111,8 +111,8 @@ namespace CapaDiseno
                     MessageBox.Show(ex.Message);
                 }
 
-            }
-            else if (Cbo_seleccion.SelectedIndex == 1)
+            }*/
+            if (Cbo_seleccion.SelectedIndex == 0)
             {
                 // Si la opcion dominio es seleccionada, mostrar todos los dominios
 
@@ -144,7 +144,7 @@ namespace CapaDiseno
                 }
             }
 
-            else if (Cbo_seleccion.SelectedIndex == 2)
+            else if (Cbo_seleccion.SelectedIndex == 1)
             {
                 // Si la opcion objetivos es seleccionada, mostrar todos los objetivos
 
@@ -176,7 +176,7 @@ namespace CapaDiseno
                 }
             }
 
-            else if (Cbo_seleccion.SelectedIndex == 3)
+            else if (Cbo_seleccion.SelectedIndex == 2)
             {
                 // Si la opcion subobjetivo es seleccionada, mostrar todos los subobjetivos
 
@@ -315,8 +315,6 @@ namespace CapaDiseno
                                      pLogica.ObtenerProgresoFromListBox(Lst_datos_grafica, seleccion)[i]);
 
             }
-
-
 
             Chart_avance.Titles.Add("Porcentaje de avance " + Convert.ToString(Cbo_seleccion.SelectedItem));
         }

@@ -185,19 +185,20 @@ namespace CapaLogica
 
             string tabla = "";
 
-            if (Cbo_seleccion.SelectedIndex == 0)
+            /* if (Cbo_seleccion.SelectedIndex == 0)
             {
-                tabla = "tbl_normativa";
-            }
-            else if (Cbo_seleccion.SelectedIndex == 1)
+                // tabla = "tbl_normativa";
+               
+            }*/
+            if (Cbo_seleccion.SelectedIndex == 0)
             {
                 tabla = "tbl_dominio";
             }
-            else if (Cbo_seleccion.SelectedIndex == 2)
+            else if (Cbo_seleccion.SelectedIndex == 1)
             {
                 tabla = "tbl_objetivo";
             }
-            else if (Cbo_seleccion.SelectedIndex == 3)
+            else if (Cbo_seleccion.SelectedIndex == 2)
             {
                 tabla = "tbl_subobjetivo";
             }
