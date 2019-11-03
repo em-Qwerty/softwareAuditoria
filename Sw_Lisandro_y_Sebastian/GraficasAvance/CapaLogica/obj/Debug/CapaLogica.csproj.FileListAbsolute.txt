@@ -35,3 +35,15 @@ C:\Users\Vic\Desktop\softwareAuditoria\Sw_Lisandro_y_Sebastian\GraficasAvance\Ca
 C:\Users\Vic\Desktop\softwareAuditoria\Sw_Lisandro_y_Sebastian\GraficasAvance\CapaLogica\obj\Debug\CapaLogica.csproj.CopyComplete
 C:\Users\Vic\Desktop\softwareAuditoria\Sw_Lisandro_y_Sebastian\GraficasAvance\CapaLogica\obj\Debug\CapaLogica.dll
 C:\Users\Vic\Desktop\softwareAuditoria\Sw_Lisandro_y_Sebastian\GraficasAvance\CapaLogica\obj\Debug\CapaLogica.pdb
+C:\Users\sebas\Desktop\SW Auditoria\softwareAuditoria\Sw_Lisandro_y_Sebastian\GraficasAvance\CapaLogica\bin\Debug\CapaLogica.dll
+C:\Users\sebas\Desktop\SW Auditoria\softwareAuditoria\Sw_Lisandro_y_Sebastian\GraficasAvance\CapaLogica\bin\Debug\CapaLogica.pdb
+C:\Users\sebas\Desktop\SW Auditoria\softwareAuditoria\Sw_Lisandro_y_Sebastian\GraficasAvance\CapaLogica\bin\Debug\CapaDatos.dll
+C:\Users\sebas\Desktop\SW Auditoria\softwareAuditoria\Sw_Lisandro_y_Sebastian\GraficasAvance\CapaLogica\bin\Debug\MySql.Data.dll
+C:\Users\sebas\Desktop\SW Auditoria\softwareAuditoria\Sw_Lisandro_y_Sebastian\GraficasAvance\CapaLogica\bin\Debug\Google.Protobuf.dll
+C:\Users\sebas\Desktop\SW Auditoria\softwareAuditoria\Sw_Lisandro_y_Sebastian\GraficasAvance\CapaLogica\bin\Debug\CapaDatos.pdb
+C:\Users\sebas\Desktop\SW Auditoria\softwareAuditoria\Sw_Lisandro_y_Sebastian\GraficasAvance\CapaLogica\bin\Debug\MySql.Data.xml
+C:\Users\sebas\Desktop\SW Auditoria\softwareAuditoria\Sw_Lisandro_y_Sebastian\GraficasAvance\CapaLogica\obj\Debug\CapaLogica.csprojAssemblyReference.cache
+C:\Users\sebas\Desktop\SW Auditoria\softwareAuditoria\Sw_Lisandro_y_Sebastian\GraficasAvance\CapaLogica\obj\Debug\CapaLogica.csproj.CoreCompileInputs.cache
+C:\Users\sebas\Desktop\SW Auditoria\softwareAuditoria\Sw_Lisandro_y_Sebastian\GraficasAvance\CapaLogica\obj\Debug\CapaLogica.csproj.CopyComplete
+C:\Users\sebas\Desktop\SW Auditoria\softwareAuditoria\Sw_Lisandro_y_Sebastian\GraficasAvance\CapaLogica\obj\Debug\CapaLogica.dll
+C:\Users\sebas\Desktop\SW Auditoria\softwareAuditoria\Sw_Lisandro_y_Sebastian\GraficasAvance\CapaLogica\obj\Debug\CapaLogica.pdb

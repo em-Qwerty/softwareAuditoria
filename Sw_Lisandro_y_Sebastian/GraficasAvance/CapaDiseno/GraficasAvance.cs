@@ -68,7 +68,8 @@ namespace CapaDiseno
         {
             /* Autor: Victor Fernandez
              * Fecha: 28/10/2019
-             *
+             * Modiciacion: Sebastian Recinos
+             * Fecha: 30/10/2019
              * Descripcion: LLena Lst_datos_a_elegir con los datos de la 
              * opcion seleccionada en el combobox Cbo_seleccion
              * ...
@@ -83,6 +84,7 @@ namespace CapaDiseno
 
                 // Borrando datos anteriores del listbox
                 Lst_datos_a_elegir.Items.Clear();
+                Lst_datos_grafica.Items.Clear();
 
                 try
                 {
@@ -114,6 +116,7 @@ namespace CapaDiseno
 
                 // Borrando datos anteriores del listbox
                 Lst_datos_a_elegir.Items.Clear();
+                Lst_datos_grafica.Items.Clear();
 
                 try
                 {
@@ -145,6 +148,7 @@ namespace CapaDiseno
 
                 // Borrando datos anteriores del listbox
                 Lst_datos_a_elegir.Items.Clear();
+                Lst_datos_grafica.Items.Clear();
 
                 try
                 {
@@ -176,6 +180,7 @@ namespace CapaDiseno
 
                 // Borrando datos anteriores del listbox
                 Lst_datos_a_elegir.Items.Clear();
+                Lst_datos_grafica.Items.Clear();
 
                 try
                 {
@@ -277,7 +282,8 @@ namespace CapaDiseno
         {
             /* Autor: Victor Fernandez
              * Fecha: 28/10/2019
-             * 
+             * Modificacion: Sebastian Recinos 
+             * Fecha: 30/10/2019
              * Descripcion: Metodo para crear una grafica basandose en la seleccion del
              * primer ComboBox
              * ...
