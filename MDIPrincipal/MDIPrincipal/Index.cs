@@ -9,6 +9,10 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using ejemploVentana;
+using InicioSesion;
+using Abner_Portillo;
+using Mantenimientos_EP;
+using Dll_Karina;
 
 namespace MDIPrincipal
 {
@@ -34,6 +38,12 @@ namespace MDIPrincipal
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            pnl_Menu inicioSes = new pnl_Menu();
+            inicioSes.FormClosed += new FormClosedEventHandler(form2_FormClosed);
+            inicioSes.ShowDialog();
+            inicioSes.TopMost = true;
+            inicioSes.Activate();
+
             this.Size = new Size(Screen.PrimaryScreen.WorkingArea.Size.Width, Screen.PrimaryScreen.WorkingArea.Size.Height);
             this.Location = new Point(0, 0);  //sobra si tienes la posición en el diseño
             Form fmr_logo = new logo();
@@ -57,9 +67,18 @@ namespace MDIPrincipal
             }
         }
 
+        void form2_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Usuario u = new Usuario();
+        }
         private void PictureBox1_Click(object sender, EventArgs e)
         {
-            this.Close();
+            this.Hide();
+            pnl_Menu inicioSes = new pnl_Menu();
+            inicioSes.FormClosed += new FormClosedEventHandler(form2_FormClosed);
+            inicioSes.ShowDialog();
+            inicioSes.TopMost = true;
+            inicioSes.Activate();
         }
 
         private void PictureBox2_Click(object sender, EventArgs e)
@@ -75,6 +94,56 @@ namespace MDIPrincipal
         private void Panel1_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void MundoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void SeguridadToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            priChildMDI(new MDISeguridad.menuSeguridad());
+        }
+
+        private void DominioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            priChildMDI(new Abner_Portillo.Frm_dominio());
+        }
+
+        private void MantenimientoAnalisisToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //priChildMDI(new moduloKarla.mantenimientosAnalisis());
+        }
+
+        private void MantenimientoAuditorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //priChildMDI(new moduloKarla.mantenimientoAuditores());
+        }
+
+        private void ObjetivoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            priChildMDI(new Abner_Portillo.Frm_objetivo());
+        }
+
+        private void NormativaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            priChildMDI(new Abner_Portillo.Frm_normativa());
+        }
+
+        private void MantenimientoDepartamentosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            priChildMDI(new Mantenimientos_EP.mantenimiento_Departamento());
+        }
+
+        private void ProyectoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            priChildMDI(new Mantenimientos_EP.mantenimiento_Proyectos());
+        }
+
+        private void MantenimientoRecursoDeTIToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            priChildMDI(new Dll_Karina.MantenimientoRecursos());
         }
     }
 }
