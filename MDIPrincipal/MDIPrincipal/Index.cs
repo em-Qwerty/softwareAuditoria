@@ -20,16 +20,24 @@ namespace MDIPrincipal
     {
         private void priChildMDI(Form fmr)
         {
-           if (Application.OpenForms[fmr.Name] != null)
+            try
             {
-                Application.OpenForms[fmr.Name].Activate();
+                if (Application.OpenForms[fmr.Name] != null)
+                {
+                    Application.OpenForms[fmr.Name].Activate();
+                }
+                else
+                {
+                    fmr.MdiParent = this;
+                    fmr.StartPosition = FormStartPosition.CenterScreen;
+                    fmr.Show();
+                }
             }
-            else
+            catch (Exception)
             {
-                fmr.MdiParent = this;
-                fmr.StartPosition = FormStartPosition.CenterScreen;
-                fmr.Show();
+
             }
+           
         }
         public Index()
         {
