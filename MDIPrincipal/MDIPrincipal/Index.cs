@@ -20,16 +20,24 @@ namespace MDIPrincipal
     {
         private void priChildMDI(Form fmr)
         {
-           if (Application.OpenForms[fmr.Name] != null)
+            try
             {
-                Application.OpenForms[fmr.Name].Activate();
+                if (Application.OpenForms[fmr.Name] != null)
+                {
+                    Application.OpenForms[fmr.Name].Activate();
+                }
+                else
+                {
+                    fmr.MdiParent = this;
+                    fmr.StartPosition = FormStartPosition.CenterScreen;
+                    fmr.Show();
+                }
             }
-            else
+            catch (Exception)
             {
-                fmr.MdiParent = this;
-                fmr.StartPosition = FormStartPosition.CenterScreen;
-                fmr.Show();
+
             }
+           
         }
         public Index()
         {
@@ -38,12 +46,6 @@ namespace MDIPrincipal
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            pnl_Menu inicioSes = new pnl_Menu();
-            inicioSes.FormClosed += new FormClosedEventHandler(form2_FormClosed);
-            inicioSes.ShowDialog();
-            inicioSes.TopMost = true;
-            inicioSes.Activate();
-
             this.Size = new Size(Screen.PrimaryScreen.WorkingArea.Size.Width, Screen.PrimaryScreen.WorkingArea.Size.Height);
             this.Location = new Point(0, 0);  //sobra si tienes la posición en el diseño
             Form fmr_logo = new logo();
@@ -51,6 +53,12 @@ namespace MDIPrincipal
             fmr_logo.StartPosition = FormStartPosition.CenterScreen;
             fmr_logo.Enabled = false;
             fmr_logo.Show();
+
+            pnl_Menu inicioSes = new pnl_Menu();
+            inicioSes.FormClosed += new FormClosedEventHandler(form2_FormClosed);
+            inicioSes.ShowDialog();
+            inicioSes.TopMost = true;
+            inicioSes.Activate();
 
             MdiClient ctlMDI;
             foreach (Control ctl in this.Controls)
