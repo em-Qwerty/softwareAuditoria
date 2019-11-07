@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.Dtg_datos = new System.Windows.Forms.DataGridView();
             this.Txt_NoAsignación = new System.Windows.Forms.TextBox();
             this.Lbl_NoAsignacion = new System.Windows.Forms.Label();
@@ -50,21 +50,21 @@
             // 
             this.Dtg_datos.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.Dtg_datos.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI Emoji", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.Dtg_datos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI Emoji", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.Dtg_datos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.Dtg_datos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.Dtg_datos.EnableHeadersVisualStyles = false;
             this.Dtg_datos.Location = new System.Drawing.Point(542, 217);
             this.Dtg_datos.Name = "Dtg_datos";
             this.Dtg_datos.RowHeadersVisible = false;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI Emoji", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Dtg_datos.RowsDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI Emoji", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Dtg_datos.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.Dtg_datos.Size = new System.Drawing.Size(519, 310);
             this.Dtg_datos.TabIndex = 15;
             // 
@@ -115,11 +115,11 @@
             // 
             this.Cmb_Auditor.Font = new System.Drawing.Font("Segoe UI Emoji", 11F);
             this.Cmb_Auditor.FormattingEnabled = true;
-            this.Cmb_Auditor.Location = new System.Drawing.Point(294, 347);
+            this.Cmb_Auditor.Location = new System.Drawing.Point(230, 347);
             this.Cmb_Auditor.Name = "Cmb_Auditor";
-            this.Cmb_Auditor.Size = new System.Drawing.Size(219, 28);
+            this.Cmb_Auditor.Size = new System.Drawing.Size(283, 28);
             this.Cmb_Auditor.TabIndex = 10;
-            this.Cmb_Auditor.Tag = "";
+            this.Cmb_Auditor.Tag = "4";
             this.Cmb_Auditor.SelectedIndexChanged += new System.EventHandler(this.Cmb_Auditor_SelectedIndexChanged);
             this.Cmb_Auditor.Click += new System.EventHandler(this.Cmb_Auditor_Click);
             // 
@@ -127,11 +127,11 @@
             // 
             this.Cmb_Proyecto.Font = new System.Drawing.Font("Segoe UI Emoji", 11F);
             this.Cmb_Proyecto.FormattingEnabled = true;
-            this.Cmb_Proyecto.Location = new System.Drawing.Point(294, 304);
+            this.Cmb_Proyecto.Location = new System.Drawing.Point(230, 304);
             this.Cmb_Proyecto.Name = "Cmb_Proyecto";
-            this.Cmb_Proyecto.Size = new System.Drawing.Size(219, 28);
+            this.Cmb_Proyecto.Size = new System.Drawing.Size(283, 28);
             this.Cmb_Proyecto.TabIndex = 9;
-            this.Cmb_Proyecto.Tag = "";
+            this.Cmb_Proyecto.Tag = "3";
             this.Cmb_Proyecto.SelectedIndexChanged += new System.EventHandler(this.Cmb_Proyecto_SelectedIndexChanged);
             this.Cmb_Proyecto.SelectedValueChanged += new System.EventHandler(this.Cmb_Proyecto_SelectedValueChanged);
             this.Cmb_Proyecto.Click += new System.EventHandler(this.Cmb_Proyecto_Click);
@@ -161,30 +161,32 @@
             // 
             this.txt_noProyecto.Enabled = false;
             this.txt_noProyecto.Font = new System.Drawing.Font("Segoe UI Emoji", 11F);
-            this.txt_noProyecto.Location = new System.Drawing.Point(230, 304);
+            this.txt_noProyecto.Location = new System.Drawing.Point(208, 305);
             this.txt_noProyecto.Name = "txt_noProyecto";
-            this.txt_noProyecto.Size = new System.Drawing.Size(58, 27);
+            this.txt_noProyecto.Size = new System.Drawing.Size(15, 27);
             this.txt_noProyecto.TabIndex = 18;
-            this.txt_noProyecto.Tag = "3";
+            this.txt_noProyecto.Tag = "";
+            this.txt_noProyecto.Visible = false;
             this.txt_noProyecto.TextChanged += new System.EventHandler(this.txt_noProyecto_TextChanged);
             // 
             // Txt_auditor
             // 
             this.Txt_auditor.Enabled = false;
             this.Txt_auditor.Font = new System.Drawing.Font("Segoe UI Emoji", 11F);
-            this.Txt_auditor.Location = new System.Drawing.Point(230, 348);
+            this.Txt_auditor.Location = new System.Drawing.Point(208, 347);
             this.Txt_auditor.Name = "Txt_auditor";
-            this.Txt_auditor.Size = new System.Drawing.Size(58, 27);
+            this.Txt_auditor.Size = new System.Drawing.Size(15, 27);
             this.Txt_auditor.TabIndex = 19;
-            this.Txt_auditor.Tag = "4";
+            this.Txt_auditor.Tag = "";
+            this.Txt_auditor.Visible = false;
             this.Txt_auditor.TextChanged += new System.EventHandler(this.Txt_auditor_TextChanged);
             // 
             // disenoNavegador1
             // 
             this.disenoNavegador1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(125)))), ((int)(((byte)(175)))));
-            this.disenoNavegador1.Location = new System.Drawing.Point(295, 89);
+            this.disenoNavegador1.Location = new System.Drawing.Point(127, 84);
             this.disenoNavegador1.Name = "disenoNavegador1";
-            this.disenoNavegador1.Size = new System.Drawing.Size(674, 43);
+            this.disenoNavegador1.Size = new System.Drawing.Size(910, 65);
             this.disenoNavegador1.TabIndex = 20;
             this.disenoNavegador1.Load += new System.EventHandler(this.disenoNavegador1_Load);
             // 

@@ -54,7 +54,7 @@ namespace mantenimientos_SB
         {
             nav.NombreForm(this);
             nav.DatosCMB("tbl_proyecto", Cmb_Proyecto, "nombre_Proyecto", "PK_Id_proyecto");
-            nav.DatosCMB("tbl_rubrica", Cmb_Rubrica, "Documento_rubrica", "Fk_Codrubricae");
+            nav.DatosCMB("tbl_rubricaEncabezado", Cmb_Rubrica, "Documento_rubrica", "PK_Codrubricae");
             nav.DatosCMB("tbl_recursosTI", Cmb_tipoRecurso, "nombre_Recurso", "Pk_Id_RecursoTi");
 
 
@@ -135,12 +135,12 @@ namespace mantenimientos_SB
 
         private void Cmb_Rubrica_Click(object sender, EventArgs e)
         {
-            nav.LlenarCampos("select Fk_Codrubricae from tbl_rubrica where Fk_Codrubricae=", Cmb_Rubrica, Txt_Rubrica);
+            nav.LlenarCampos("select PK_Codrubricae from tbl_rubricaEncabezado where PK_Codrubricae=", Cmb_Rubrica, Txt_Rubrica);
         }
 
         private void Cmb_Rubrica_SelectedValueChanged(object sender, EventArgs e)
         {
-            nav.LlenarCampos("select Fk_Codrubricae from tbl_rubrica where Fk_Codrubricae=", Cmb_Rubrica, Txt_Rubrica);
+            nav.LlenarCampos("select PK_Codrubricae from tbl_rubricaEncabezado where PK_Codrubricae=", Cmb_Rubrica, Txt_Rubrica);
         }
 
         private void Cmb_Rubrica_SelectedIndexChanged(object sender, EventArgs e)

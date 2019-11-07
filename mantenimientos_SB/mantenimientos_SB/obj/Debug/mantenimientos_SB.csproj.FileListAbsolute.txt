@@ -13,3 +13,32 @@ c:\users\usuario\documents\visual studio 2015\Projects\mantenimientos_SB\manteni
 c:\users\usuario\documents\visual studio 2015\Projects\mantenimientos_SB\mantenimientos_SB\bin\Debug\Navegador_.pdb
 c:\users\usuario\documents\visual studio 2015\Projects\mantenimientos_SB\mantenimientos_SB\bin\Debug\CapaLogicaNavegador.pdb
 c:\users\usuario\documents\visual studio 2015\Projects\mantenimientos_SB\mantenimientos_SB\bin\Debug\CapaDatosNavegador.pdb
+E:\Descargas\Documentos\Universidad\Auditoria\Proyecto\softwareSindy\softwareAuditoria\mantenimientos_SB\mantenimientos_SB\bin\Debug\mantenimientos_SB.dll
+E:\Descargas\Documentos\Universidad\Auditoria\Proyecto\softwareSindy\softwareAuditoria\mantenimientos_SB\mantenimientos_SB\bin\Debug\mantenimientos_SB.pdb
+E:\Descargas\Documentos\Universidad\Auditoria\Proyecto\softwareSindy\softwareAuditoria\mantenimientos_SB\mantenimientos_SB\bin\Debug\ventanaDiseno.dll
+E:\Descargas\Documentos\Universidad\Auditoria\Proyecto\softwareSindy\softwareAuditoria\mantenimientos_SB\mantenimientos_SB\bin\Debug\CapaLogicaNavegador.dll
+E:\Descargas\Documentos\Universidad\Auditoria\Proyecto\softwareSindy\softwareAuditoria\mantenimientos_SB\mantenimientos_SB\bin\Debug\CapaDatosNavegador.dll
+E:\Descargas\Documentos\Universidad\Auditoria\Proyecto\softwareSindy\softwareAuditoria\mantenimientos_SB\mantenimientos_SB\bin\Debug\Navegador_.pdb
+E:\Descargas\Documentos\Universidad\Auditoria\Proyecto\softwareSindy\softwareAuditoria\mantenimientos_SB\mantenimientos_SB\bin\Debug\CapaLogicaNavegador.pdb
+E:\Descargas\Documentos\Universidad\Auditoria\Proyecto\softwareSindy\softwareAuditoria\mantenimientos_SB\mantenimientos_SB\bin\Debug\CapaDatosNavegador.pdb
+E:\Descargas\Documentos\Universidad\Auditoria\Proyecto\softwareSindy\softwareAuditoria\mantenimientos_SB\mantenimientos_SB\obj\Debug\mantenimientos_SB.csprojAssemblyReference.cache
+E:\Descargas\Documentos\Universidad\Auditoria\Proyecto\softwareSindy\softwareAuditoria\mantenimientos_SB\mantenimientos_SB\obj\Debug\mantenimientos_SB.mantenimiento_asignacionAuditorProyecto.resources
+E:\Descargas\Documentos\Universidad\Auditoria\Proyecto\softwareSindy\softwareAuditoria\mantenimientos_SB\mantenimientos_SB\obj\Debug\mantenimientos_SB.mantenimiento_asignacionRecursosTI.resources
+E:\Descargas\Documentos\Universidad\Auditoria\Proyecto\softwareSindy\softwareAuditoria\mantenimientos_SB\mantenimientos_SB\obj\Debug\mantenimientos_SB.csproj.GenerateResource.cache
+E:\Descargas\Documentos\Universidad\Auditoria\Proyecto\softwareSindy\softwareAuditoria\mantenimientos_SB\mantenimientos_SB\obj\Debug\mantenimientos_SB.csproj.CopyComplete
+E:\Descargas\Documentos\Universidad\Auditoria\Proyecto\softwareSindy\softwareAuditoria\mantenimientos_SB\mantenimientos_SB\obj\Debug\mantenimientos_SB.dll
+E:\Descargas\Documentos\Universidad\Auditoria\Proyecto\softwareSindy\softwareAuditoria\mantenimientos_SB\mantenimientos_SB\obj\Debug\mantenimientos_SB.pdb
+C:\Users\Usuario\Desktop\ModificacionAudi\mantenimientos_SB\mantenimientos_SB\bin\Debug\mantenimientos_SB.dll
+C:\Users\Usuario\Desktop\ModificacionAudi\mantenimientos_SB\mantenimientos_SB\bin\Debug\mantenimientos_SB.pdb
+C:\Users\Usuario\Desktop\ModificacionAudi\mantenimientos_SB\mantenimientos_SB\bin\Debug\ventanaDiseno.dll
+C:\Users\Usuario\Desktop\ModificacionAudi\mantenimientos_SB\mantenimientos_SB\bin\Debug\CapaLogicaNavegador.dll
+C:\Users\Usuario\Desktop\ModificacionAudi\mantenimientos_SB\mantenimientos_SB\bin\Debug\CapaDatosNavegador.dll
+C:\Users\Usuario\Desktop\ModificacionAudi\mantenimientos_SB\mantenimientos_SB\bin\Debug\Navegador_.pdb
+C:\Users\Usuario\Desktop\ModificacionAudi\mantenimientos_SB\mantenimientos_SB\bin\Debug\CapaLogicaNavegador.pdb
+C:\Users\Usuario\Desktop\ModificacionAudi\mantenimientos_SB\mantenimientos_SB\bin\Debug\CapaDatosNavegador.pdb
+C:\Users\Usuario\Desktop\ModificacionAudi\mantenimientos_SB\mantenimientos_SB\obj\Debug\mantenimientos_SB.csprojResolveAssemblyReference.cache
+C:\Users\Usuario\Desktop\ModificacionAudi\mantenimientos_SB\mantenimientos_SB\obj\Debug\mantenimientos_SB.mantenimiento_asignacionAuditorProyecto.resources
+C:\Users\Usuario\Desktop\ModificacionAudi\mantenimientos_SB\mantenimientos_SB\obj\Debug\mantenimientos_SB.mantenimiento_asignacionRecursosTI.resources
+C:\Users\Usuario\Desktop\ModificacionAudi\mantenimientos_SB\mantenimientos_SB\obj\Debug\mantenimientos_SB.csproj.GenerateResource.Cache
+C:\Users\Usuario\Desktop\ModificacionAudi\mantenimientos_SB\mantenimientos_SB\obj\Debug\mantenimientos_SB.dll
+C:\Users\Usuario\Desktop\ModificacionAudi\mantenimientos_SB\mantenimientos_SB\obj\Debug\mantenimientos_SB.pdb

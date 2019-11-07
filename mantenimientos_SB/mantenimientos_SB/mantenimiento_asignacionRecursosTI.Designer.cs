@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.disenoNavegador1 = new Navegador_.DisenoNavegador();
             this.Lbl_TipoRecurso = new System.Windows.Forms.Label();
             this.Cmb_tipoRecurso = new System.Windows.Forms.ComboBox();
@@ -52,9 +52,9 @@
             // disenoNavegador1
             // 
             this.disenoNavegador1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(125)))), ((int)(((byte)(175)))));
-            this.disenoNavegador1.Location = new System.Drawing.Point(266, 90);
+            this.disenoNavegador1.Location = new System.Drawing.Point(127, 84);
             this.disenoNavegador1.Name = "disenoNavegador1";
-            this.disenoNavegador1.Size = new System.Drawing.Size(674, 43);
+            this.disenoNavegador1.Size = new System.Drawing.Size(910, 65);
             this.disenoNavegador1.TabIndex = 1;
             // 
             // Lbl_TipoRecurso
@@ -76,10 +76,11 @@
             this.Cmb_tipoRecurso.Items.AddRange(new object[] {
             "Hardware",
             "Software"});
-            this.Cmb_tipoRecurso.Location = new System.Drawing.Point(281, 291);
+            this.Cmb_tipoRecurso.Location = new System.Drawing.Point(217, 291);
             this.Cmb_tipoRecurso.Name = "Cmb_tipoRecurso";
-            this.Cmb_tipoRecurso.Size = new System.Drawing.Size(217, 29);
+            this.Cmb_tipoRecurso.Size = new System.Drawing.Size(281, 29);
             this.Cmb_tipoRecurso.TabIndex = 31;
+            this.Cmb_tipoRecurso.Tag = "3";
             this.Cmb_tipoRecurso.SelectedIndexChanged += new System.EventHandler(this.Cmb_tipoRecurso_SelectedIndexChanged);
             this.Cmb_tipoRecurso.Click += new System.EventHandler(this.Cmb_tipoRecurso_Click);
             // 
@@ -108,21 +109,21 @@
             // 
             this.Dtg_datos.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             this.Dtg_datos.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI Emoji", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.Dtg_datos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI Emoji", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.Dtg_datos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.Dtg_datos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.Dtg_datos.EnableHeadersVisualStyles = false;
             this.Dtg_datos.Location = new System.Drawing.Point(523, 202);
             this.Dtg_datos.Name = "Dtg_datos";
             this.Dtg_datos.RowHeadersVisible = false;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI Emoji", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Dtg_datos.RowsDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI Emoji", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Dtg_datos.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.Dtg_datos.Size = new System.Drawing.Size(591, 322);
             this.Dtg_datos.TabIndex = 26;
             // 
@@ -161,10 +162,11 @@
             // 
             this.Cmb_Proyecto.Font = new System.Drawing.Font("Segoe UI Emoji", 12F);
             this.Cmb_Proyecto.FormattingEnabled = true;
-            this.Cmb_Proyecto.Location = new System.Drawing.Point(281, 248);
+            this.Cmb_Proyecto.Location = new System.Drawing.Point(217, 248);
             this.Cmb_Proyecto.Name = "Cmb_Proyecto";
-            this.Cmb_Proyecto.Size = new System.Drawing.Size(217, 29);
+            this.Cmb_Proyecto.Size = new System.Drawing.Size(281, 29);
             this.Cmb_Proyecto.TabIndex = 22;
+            this.Cmb_Proyecto.Tag = "4";
             this.Cmb_Proyecto.SelectedValueChanged += new System.EventHandler(this.Cmb_Proyecto_SelectedValueChanged);
             this.Cmb_Proyecto.Click += new System.EventHandler(this.Cmb_Proyecto_Click);
             // 
@@ -183,10 +185,11 @@
             // 
             this.Cmb_Rubrica.Font = new System.Drawing.Font("Segoe UI Emoji", 12F);
             this.Cmb_Rubrica.FormattingEnabled = true;
-            this.Cmb_Rubrica.Location = new System.Drawing.Point(281, 418);
+            this.Cmb_Rubrica.Location = new System.Drawing.Point(217, 418);
             this.Cmb_Rubrica.Name = "Cmb_Rubrica";
-            this.Cmb_Rubrica.Size = new System.Drawing.Size(217, 29);
+            this.Cmb_Rubrica.Size = new System.Drawing.Size(281, 29);
             this.Cmb_Rubrica.TabIndex = 33;
+            this.Cmb_Rubrica.Tag = "5";
             this.Cmb_Rubrica.SelectedIndexChanged += new System.EventHandler(this.Cmb_Rubrica_SelectedIndexChanged);
             this.Cmb_Rubrica.ValueMemberChanged += new System.EventHandler(this.Cmb_Rubrica_Click);
             this.Cmb_Rubrica.SelectedValueChanged += new System.EventHandler(this.Cmb_Rubrica_SelectedValueChanged);
@@ -196,33 +199,36 @@
             // 
             this.txt_noProyecto.Enabled = false;
             this.txt_noProyecto.Font = new System.Drawing.Font("Segoe UI Emoji", 11F);
-            this.txt_noProyecto.Location = new System.Drawing.Point(217, 250);
+            this.txt_noProyecto.Location = new System.Drawing.Point(197, 250);
             this.txt_noProyecto.Name = "txt_noProyecto";
-            this.txt_noProyecto.Size = new System.Drawing.Size(58, 27);
+            this.txt_noProyecto.Size = new System.Drawing.Size(10, 27);
             this.txt_noProyecto.TabIndex = 35;
-            this.txt_noProyecto.Tag = "4";
+            this.txt_noProyecto.Tag = "";
+            this.txt_noProyecto.Visible = false;
             this.txt_noProyecto.TextChanged += new System.EventHandler(this.txt_noProyecto_TextChanged);
             // 
             // TxtRecurso
             // 
             this.TxtRecurso.Enabled = false;
             this.TxtRecurso.Font = new System.Drawing.Font("Segoe UI Emoji", 11F);
-            this.TxtRecurso.Location = new System.Drawing.Point(217, 293);
+            this.TxtRecurso.Location = new System.Drawing.Point(197, 292);
             this.TxtRecurso.Name = "TxtRecurso";
-            this.TxtRecurso.Size = new System.Drawing.Size(58, 27);
+            this.TxtRecurso.Size = new System.Drawing.Size(10, 27);
             this.TxtRecurso.TabIndex = 36;
-            this.TxtRecurso.Tag = "3";
+            this.TxtRecurso.Tag = "";
+            this.TxtRecurso.Visible = false;
             this.TxtRecurso.TextChanged += new System.EventHandler(this.TxtRecurso_TextChanged);
             // 
             // Txt_Rubrica
             // 
             this.Txt_Rubrica.Enabled = false;
             this.Txt_Rubrica.Font = new System.Drawing.Font("Segoe UI Emoji", 11F);
-            this.Txt_Rubrica.Location = new System.Drawing.Point(217, 420);
+            this.Txt_Rubrica.Location = new System.Drawing.Point(197, 418);
             this.Txt_Rubrica.Name = "Txt_Rubrica";
-            this.Txt_Rubrica.Size = new System.Drawing.Size(58, 27);
+            this.Txt_Rubrica.Size = new System.Drawing.Size(10, 27);
             this.Txt_Rubrica.TabIndex = 37;
-            this.Txt_Rubrica.Tag = "5";
+            this.Txt_Rubrica.Tag = "";
+            this.Txt_Rubrica.Visible = false;
             this.Txt_Rubrica.TextChanged += new System.EventHandler(this.Txt_Rubrica_TextChanged);
             // 
             // ventana1
