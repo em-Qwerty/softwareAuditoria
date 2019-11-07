@@ -134,7 +134,7 @@ namespace CapaDNavegador
         public void pubCamposTabla(string tabla)
         {
             sql = "";
-            sql = "SELECT DISTINCT COLUMN_NAME FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = '" + tabla + "';";
+            sql = "SHOW COLUMNS FROM '" + tabla + "';";
         }
         public void refrescarData(string tablaData, string id, string campoPrimaria)
         {
