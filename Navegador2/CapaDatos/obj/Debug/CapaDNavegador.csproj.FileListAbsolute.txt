@@ -3,3 +3,8 @@ C:\Users\ABNER\Desktop\Navegador2\CapaDatos\bin\Debug\CapaDNavegador.dll
 C:\Users\ABNER\Desktop\Navegador2\CapaDatos\bin\Debug\CapaDNavegador.pdb
 C:\Users\ABNER\Desktop\Navegador2\CapaDatos\obj\Debug\CapaDNavegador.dll
 C:\Users\ABNER\Desktop\Navegador2\CapaDatos\obj\Debug\CapaDNavegador.pdb
+E:\Descargas\Documentos\Universidad\Auditoria\Proyecto\softwareAuditoria\Navegador2\CapaDatos\bin\Debug\CapaDNavegador.dll
+E:\Descargas\Documentos\Universidad\Auditoria\Proyecto\softwareAuditoria\Navegador2\CapaDatos\bin\Debug\CapaDNavegador.pdb
+E:\Descargas\Documentos\Universidad\Auditoria\Proyecto\softwareAuditoria\Navegador2\CapaDatos\obj\Debug\CapaDNavegador.csprojAssemblyReference.cache
+E:\Descargas\Documentos\Universidad\Auditoria\Proyecto\softwareAuditoria\Navegador2\CapaDatos\obj\Debug\CapaDNavegador.dll
+E:\Descargas\Documentos\Universidad\Auditoria\Proyecto\softwareAuditoria\Navegador2\CapaDatos\obj\Debug\CapaDNavegador.pdb

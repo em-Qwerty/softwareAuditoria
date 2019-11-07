@@ -7,3 +7,11 @@ C:\Users\ABNER\Desktop\Navegador2\CapaLogica\obj\Debug\CapaLNavegador.csproj.Cor
 C:\Users\ABNER\Desktop\Navegador2\CapaLogica\obj\Debug\CapaLNavegador.csproj.CopyComplete
 C:\Users\ABNER\Desktop\Navegador2\CapaLogica\obj\Debug\CapaLNavegador.dll
 C:\Users\ABNER\Desktop\Navegador2\CapaLogica\obj\Debug\CapaLNavegador.pdb
+E:\Descargas\Documentos\Universidad\Auditoria\Proyecto\softwareAuditoria\Navegador2\CapaLogica\bin\Debug\CapaLNavegador.dll
+E:\Descargas\Documentos\Universidad\Auditoria\Proyecto\softwareAuditoria\Navegador2\CapaLogica\bin\Debug\CapaLNavegador.pdb
+E:\Descargas\Documentos\Universidad\Auditoria\Proyecto\softwareAuditoria\Navegador2\CapaLogica\bin\Debug\CapaDNavegador.dll
+E:\Descargas\Documentos\Universidad\Auditoria\Proyecto\softwareAuditoria\Navegador2\CapaLogica\bin\Debug\CapaDNavegador.pdb
+E:\Descargas\Documentos\Universidad\Auditoria\Proyecto\softwareAuditoria\Navegador2\CapaLogica\obj\Debug\CapaLNavegador.csprojAssemblyReference.cache
+E:\Descargas\Documentos\Universidad\Auditoria\Proyecto\softwareAuditoria\Navegador2\CapaLogica\obj\Debug\CapaLNavegador.csproj.CopyComplete
+E:\Descargas\Documentos\Universidad\Auditoria\Proyecto\softwareAuditoria\Navegador2\CapaLogica\obj\Debug\CapaLNavegador.dll
+E:\Descargas\Documentos\Universidad\Auditoria\Proyecto\softwareAuditoria\Navegador2\CapaLogica\obj\Debug\CapaLNavegador.pdb
