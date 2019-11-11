@@ -34,3 +34,20 @@ C:\Users\KaRi\Documents\DECIMO SEMESTRE\AUDITORIA\SOFTWARE AUDITORIA\KARI YOS SO
 C:\Users\KaRi\Documents\DECIMO SEMESTRE\AUDITORIA\SOFTWARE AUDITORIA\KARI YOS SOFTWARE\Dll_Karina\Dll_Karina\bin\Debug\Navegador_.pdb
 C:\Users\KaRi\Documents\DECIMO SEMESTRE\AUDITORIA\SOFTWARE AUDITORIA\KARI YOS SOFTWARE\Dll_Karina\Dll_Karina\bin\Debug\CapaLogicaNavegador.pdb
 C:\Users\KaRi\Documents\DECIMO SEMESTRE\AUDITORIA\SOFTWARE AUDITORIA\KARI YOS SOFTWARE\Dll_Karina\Dll_Karina\bin\Debug\CapaDatosNavegador.pdb
+E:\Descargas\Documentos\Universidad\Auditoria\Proyecto\softwareAuditoria\Dll_Karina\Dll_Karina\bin\Debug\Dll_Karina.dll
+E:\Descargas\Documentos\Universidad\Auditoria\Proyecto\softwareAuditoria\Dll_Karina\Dll_Karina\bin\Debug\Dll_Karina.pdb
+E:\Descargas\Documentos\Universidad\Auditoria\Proyecto\softwareAuditoria\Dll_Karina\Dll_Karina\bin\Debug\Navegador_.dll
+E:\Descargas\Documentos\Universidad\Auditoria\Proyecto\softwareAuditoria\Dll_Karina\Dll_Karina\bin\Debug\CapaLogicaNavegador.dll
+E:\Descargas\Documentos\Universidad\Auditoria\Proyecto\softwareAuditoria\Dll_Karina\Dll_Karina\bin\Debug\CapaDatosNavegador.dll
+E:\Descargas\Documentos\Universidad\Auditoria\Proyecto\softwareAuditoria\Dll_Karina\Dll_Karina\bin\Debug\Navegador_.pdb
+E:\Descargas\Documentos\Universidad\Auditoria\Proyecto\softwareAuditoria\Dll_Karina\Dll_Karina\bin\Debug\CapaLogicaNavegador.pdb
+E:\Descargas\Documentos\Universidad\Auditoria\Proyecto\softwareAuditoria\Dll_Karina\Dll_Karina\bin\Debug\CapaDatosNavegador.pdb
+E:\Descargas\Documentos\Universidad\Auditoria\Proyecto\softwareAuditoria\Dll_Karina\Dll_Karina\obj\Debug\Dll_Karina.csprojAssemblyReference.cache
+E:\Descargas\Documentos\Universidad\Auditoria\Proyecto\softwareAuditoria\Dll_Karina\Dll_Karina\obj\Debug\Dll_Karina.AsignacionDeptos.resources
+E:\Descargas\Documentos\Universidad\Auditoria\Proyecto\softwareAuditoria\Dll_Karina\Dll_Karina\obj\Debug\Dll_Karina.MantenimientoDepartamentos.resources
+E:\Descargas\Documentos\Universidad\Auditoria\Proyecto\softwareAuditoria\Dll_Karina\Dll_Karina\obj\Debug\Dll_Karina.MantenimientoRecursos.resources
+E:\Descargas\Documentos\Universidad\Auditoria\Proyecto\softwareAuditoria\Dll_Karina\Dll_Karina\obj\Debug\Dll_Karina.MantenimientoRecursosTI.resources
+E:\Descargas\Documentos\Universidad\Auditoria\Proyecto\softwareAuditoria\Dll_Karina\Dll_Karina\obj\Debug\Dll_Karina.csproj.GenerateResource.cache
+E:\Descargas\Documentos\Universidad\Auditoria\Proyecto\softwareAuditoria\Dll_Karina\Dll_Karina\obj\Debug\Dll_Karina.csproj.CopyComplete
+E:\Descargas\Documentos\Universidad\Auditoria\Proyecto\softwareAuditoria\Dll_Karina\Dll_Karina\obj\Debug\Dll_Karina.dll
+E:\Descargas\Documentos\Universidad\Auditoria\Proyecto\softwareAuditoria\Dll_Karina\Dll_Karina\obj\Debug\Dll_Karina.pdb

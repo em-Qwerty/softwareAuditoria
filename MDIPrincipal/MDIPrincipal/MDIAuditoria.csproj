@@ -60,6 +60,9 @@
     <Reference Include="Mantenimientos_EP">
       <HintPath>..\Dlls\Estuardo Perez\Mantenimientos_EP.dll</HintPath>
     </Reference>
+    <Reference Include="mantenimientos_SB">
+      <HintPath>..\Dlls\Sindy Batz\mantenimientos_SB.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
