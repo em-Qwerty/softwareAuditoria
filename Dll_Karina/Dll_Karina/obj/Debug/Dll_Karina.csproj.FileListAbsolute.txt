@@ -1,0 +1,36 @@
+C:\Users\KaRi\source\repos\Dll_Karina\Dll_Karina\bin\Debug\Dll_Karina.dll
+C:\Users\KaRi\source\repos\Dll_Karina\Dll_Karina\bin\Debug\Dll_Karina.pdb
+C:\Users\KaRi\source\repos\Dll_Karina\Dll_Karina\bin\Debug\CapaDatosNavegador.dll
+C:\Users\KaRi\source\repos\Dll_Karina\Dll_Karina\bin\Debug\Navegador_.dll
+C:\Users\KaRi\source\repos\Dll_Karina\Dll_Karina\bin\Debug\ventanaDiseno.dll
+C:\Users\KaRi\source\repos\Dll_Karina\Dll_Karina\bin\Debug\CapaLogicaNavegador.dll
+C:\Users\KaRi\source\repos\Dll_Karina\Dll_Karina\bin\Debug\ConsultasInteligentes.dll
+C:\Users\KaRi\source\repos\Dll_Karina\Dll_Karina\bin\Debug\CapaDatosNavegador.pdb
+C:\Users\KaRi\source\repos\Dll_Karina\Dll_Karina\bin\Debug\Navegador_.pdb
+C:\Users\KaRi\source\repos\Dll_Karina\Dll_Karina\bin\Debug\CapaLogicaNavegador.pdb
+C:\Users\KaRi\source\repos\Dll_Karina\Dll_Karina\obj\Debug\Dll_Karina.csprojAssemblyReference.cache
+C:\Users\KaRi\source\repos\Dll_Karina\Dll_Karina\obj\Debug\Dll_Karina.MantenimientoDeptos.resources
+C:\Users\KaRi\source\repos\Dll_Karina\Dll_Karina\obj\Debug\Dll_Karina.MantenimientoRecursos.resources
+C:\Users\KaRi\source\repos\Dll_Karina\Dll_Karina\obj\Debug\Dll_Karina.csproj.GenerateResource.cache
+C:\Users\KaRi\source\repos\Dll_Karina\Dll_Karina\obj\Debug\Dll_Karina.csproj.CoreCompileInputs.cache
+C:\Users\KaRi\source\repos\Dll_Karina\Dll_Karina\obj\Debug\Dll_Karina.csproj.CopyComplete
+C:\Users\KaRi\source\repos\Dll_Karina\Dll_Karina\obj\Debug\Dll_Karina.dll
+C:\Users\KaRi\source\repos\Dll_Karina\Dll_Karina\obj\Debug\Dll_Karina.pdb
+C:\Users\KaRi\Documents\DECIMO SEMESTRE\AUDITORIA\SOFTWARE AUDITORIA\KARI YOS SOFTWARE\Dll_Karina\Dll_Karina\bin\Debug\Dll_Karina.dll
+C:\Users\KaRi\Documents\DECIMO SEMESTRE\AUDITORIA\SOFTWARE AUDITORIA\KARI YOS SOFTWARE\Dll_Karina\Dll_Karina\bin\Debug\Dll_Karina.pdb
+C:\Users\KaRi\Documents\DECIMO SEMESTRE\AUDITORIA\SOFTWARE AUDITORIA\KARI YOS SOFTWARE\Dll_Karina\Dll_Karina\obj\Debug\Dll_Karina.MantenimientoRecursos.resources
+C:\Users\KaRi\Documents\DECIMO SEMESTRE\AUDITORIA\SOFTWARE AUDITORIA\KARI YOS SOFTWARE\Dll_Karina\Dll_Karina\obj\Debug\Dll_Karina.csproj.GenerateResource.cache
+C:\Users\KaRi\Documents\DECIMO SEMESTRE\AUDITORIA\SOFTWARE AUDITORIA\KARI YOS SOFTWARE\Dll_Karina\Dll_Karina\obj\Debug\Dll_Karina.csproj.CoreCompileInputs.cache
+C:\Users\KaRi\Documents\DECIMO SEMESTRE\AUDITORIA\SOFTWARE AUDITORIA\KARI YOS SOFTWARE\Dll_Karina\Dll_Karina\obj\Debug\Dll_Karina.csproj.CopyComplete
+C:\Users\KaRi\Documents\DECIMO SEMESTRE\AUDITORIA\SOFTWARE AUDITORIA\KARI YOS SOFTWARE\Dll_Karina\Dll_Karina\obj\Debug\Dll_Karina.dll
+C:\Users\KaRi\Documents\DECIMO SEMESTRE\AUDITORIA\SOFTWARE AUDITORIA\KARI YOS SOFTWARE\Dll_Karina\Dll_Karina\obj\Debug\Dll_Karina.pdb
+C:\Users\KaRi\Documents\DECIMO SEMESTRE\AUDITORIA\SOFTWARE AUDITORIA\KARI YOS SOFTWARE\Dll_Karina\Dll_Karina\obj\Debug\Dll_Karina.AsignacionDeptos.resources
+C:\Users\KaRi\Documents\DECIMO SEMESTRE\AUDITORIA\SOFTWARE AUDITORIA\KARI YOS SOFTWARE\Dll_Karina\Dll_Karina\obj\Debug\Dll_Karina.MantenimientoDepartamentos.resources
+C:\Users\KaRi\Documents\DECIMO SEMESTRE\AUDITORIA\SOFTWARE AUDITORIA\KARI YOS SOFTWARE\Dll_Karina\Dll_Karina\obj\Debug\Dll_Karina.MantenimientoRecursosTI.resources
+C:\Users\KaRi\Documents\DECIMO SEMESTRE\AUDITORIA\SOFTWARE AUDITORIA\KARI YOS SOFTWARE\Dll_Karina\Dll_Karina\obj\Debug\Dll_Karina.csprojAssemblyReference.cache
+C:\Users\KaRi\Documents\DECIMO SEMESTRE\AUDITORIA\SOFTWARE AUDITORIA\KARI YOS SOFTWARE\Dll_Karina\Dll_Karina\bin\Debug\Navegador_.dll
+C:\Users\KaRi\Documents\DECIMO SEMESTRE\AUDITORIA\SOFTWARE AUDITORIA\KARI YOS SOFTWARE\Dll_Karina\Dll_Karina\bin\Debug\CapaLogicaNavegador.dll
+C:\Users\KaRi\Documents\DECIMO SEMESTRE\AUDITORIA\SOFTWARE AUDITORIA\KARI YOS SOFTWARE\Dll_Karina\Dll_Karina\bin\Debug\CapaDatosNavegador.dll
+C:\Users\KaRi\Documents\DECIMO SEMESTRE\AUDITORIA\SOFTWARE AUDITORIA\KARI YOS SOFTWARE\Dll_Karina\Dll_Karina\bin\Debug\Navegador_.pdb
+C:\Users\KaRi\Documents\DECIMO SEMESTRE\AUDITORIA\SOFTWARE AUDITORIA\KARI YOS SOFTWARE\Dll_Karina\Dll_Karina\bin\Debug\CapaLogicaNavegador.pdb
+C:\Users\KaRi\Documents\DECIMO SEMESTRE\AUDITORIA\SOFTWARE AUDITORIA\KARI YOS SOFTWARE\Dll_Karina\Dll_Karina\bin\Debug\CapaDatosNavegador.pdb
