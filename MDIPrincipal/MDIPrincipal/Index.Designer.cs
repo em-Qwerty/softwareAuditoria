@@ -37,13 +37,15 @@
             this.dominioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.objetivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.normativaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.proyectoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mantenimientosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mantenimientoAnalisisToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mantenimientoAuditorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.seguridadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mantenimientoDepartamentosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.proyectoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mantenimientoRecursoDeTIToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.seguridadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mantenimientoAsignaciónAuditorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mantenimientoAsignaciónRecursosDeTIToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -145,13 +147,22 @@
             this.normativaToolStripMenuItem.Text = "Normativa";
             this.normativaToolStripMenuItem.Click += new System.EventHandler(this.NormativaToolStripMenuItem_Click);
             // 
+            // proyectoToolStripMenuItem
+            // 
+            this.proyectoToolStripMenuItem.Name = "proyectoToolStripMenuItem";
+            this.proyectoToolStripMenuItem.Size = new System.Drawing.Size(154, 26);
+            this.proyectoToolStripMenuItem.Text = "Proyecto";
+            this.proyectoToolStripMenuItem.Click += new System.EventHandler(this.ProyectoToolStripMenuItem_Click);
+            // 
             // mantenimientosToolStripMenuItem
             // 
             this.mantenimientosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mantenimientoAnalisisToolStripMenuItem,
             this.mantenimientoAuditorToolStripMenuItem,
             this.mantenimientoDepartamentosToolStripMenuItem,
-            this.mantenimientoRecursoDeTIToolStripMenuItem});
+            this.mantenimientoRecursoDeTIToolStripMenuItem,
+            this.mantenimientoAsignaciónAuditorToolStripMenuItem,
+            this.mantenimientoAsignaciónRecursosDeTIToolStripMenuItem});
             this.mantenimientosToolStripMenuItem.Name = "mantenimientosToolStripMenuItem";
             this.mantenimientosToolStripMenuItem.Size = new System.Drawing.Size(135, 27);
             this.mantenimientosToolStripMenuItem.Text = "Mantenimientos";
@@ -159,16 +170,30 @@
             // mantenimientoAnalisisToolStripMenuItem
             // 
             this.mantenimientoAnalisisToolStripMenuItem.Name = "mantenimientoAnalisisToolStripMenuItem";
-            this.mantenimientoAnalisisToolStripMenuItem.Size = new System.Drawing.Size(297, 26);
+            this.mantenimientoAnalisisToolStripMenuItem.Size = new System.Drawing.Size(366, 26);
             this.mantenimientoAnalisisToolStripMenuItem.Text = "Mantenimiento analisis";
             this.mantenimientoAnalisisToolStripMenuItem.Click += new System.EventHandler(this.MantenimientoAnalisisToolStripMenuItem_Click);
             // 
             // mantenimientoAuditorToolStripMenuItem
             // 
             this.mantenimientoAuditorToolStripMenuItem.Name = "mantenimientoAuditorToolStripMenuItem";
-            this.mantenimientoAuditorToolStripMenuItem.Size = new System.Drawing.Size(297, 26);
+            this.mantenimientoAuditorToolStripMenuItem.Size = new System.Drawing.Size(366, 26);
             this.mantenimientoAuditorToolStripMenuItem.Text = "Mantenimiento auditor";
             this.mantenimientoAuditorToolStripMenuItem.Click += new System.EventHandler(this.MantenimientoAuditorToolStripMenuItem_Click);
+            // 
+            // mantenimientoDepartamentosToolStripMenuItem
+            // 
+            this.mantenimientoDepartamentosToolStripMenuItem.Name = "mantenimientoDepartamentosToolStripMenuItem";
+            this.mantenimientoDepartamentosToolStripMenuItem.Size = new System.Drawing.Size(366, 26);
+            this.mantenimientoDepartamentosToolStripMenuItem.Text = "Mantenimiento Departamentos";
+            this.mantenimientoDepartamentosToolStripMenuItem.Click += new System.EventHandler(this.MantenimientoDepartamentosToolStripMenuItem_Click);
+            // 
+            // mantenimientoRecursoDeTIToolStripMenuItem
+            // 
+            this.mantenimientoRecursoDeTIToolStripMenuItem.Name = "mantenimientoRecursoDeTIToolStripMenuItem";
+            this.mantenimientoRecursoDeTIToolStripMenuItem.Size = new System.Drawing.Size(366, 26);
+            this.mantenimientoRecursoDeTIToolStripMenuItem.Text = "Mantenimiento Recurso de TI";
+            this.mantenimientoRecursoDeTIToolStripMenuItem.Click += new System.EventHandler(this.MantenimientoRecursoDeTIToolStripMenuItem_Click);
             // 
             // seguridadToolStripMenuItem
             // 
@@ -177,26 +202,19 @@
             this.seguridadToolStripMenuItem.Text = "Seguridad";
             this.seguridadToolStripMenuItem.Click += new System.EventHandler(this.SeguridadToolStripMenuItem_Click);
             // 
-            // mantenimientoDepartamentosToolStripMenuItem
+            // mantenimientoAsignaciónAuditorToolStripMenuItem
             // 
-            this.mantenimientoDepartamentosToolStripMenuItem.Name = "mantenimientoDepartamentosToolStripMenuItem";
-            this.mantenimientoDepartamentosToolStripMenuItem.Size = new System.Drawing.Size(297, 26);
-            this.mantenimientoDepartamentosToolStripMenuItem.Text = "Mantenimiento Departamentos";
-            this.mantenimientoDepartamentosToolStripMenuItem.Click += new System.EventHandler(this.MantenimientoDepartamentosToolStripMenuItem_Click);
+            this.mantenimientoAsignaciónAuditorToolStripMenuItem.Name = "mantenimientoAsignaciónAuditorToolStripMenuItem";
+            this.mantenimientoAsignaciónAuditorToolStripMenuItem.Size = new System.Drawing.Size(366, 26);
+            this.mantenimientoAsignaciónAuditorToolStripMenuItem.Text = "Mantenimiento Asignación auditor";
+            this.mantenimientoAsignaciónAuditorToolStripMenuItem.Click += new System.EventHandler(this.mantenimientoAsignaciónAuditorToolStripMenuItem_Click);
             // 
-            // proyectoToolStripMenuItem
+            // mantenimientoAsignaciónRecursosDeTIToolStripMenuItem
             // 
-            this.proyectoToolStripMenuItem.Name = "proyectoToolStripMenuItem";
-            this.proyectoToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
-            this.proyectoToolStripMenuItem.Text = "Proyecto";
-            this.proyectoToolStripMenuItem.Click += new System.EventHandler(this.ProyectoToolStripMenuItem_Click);
-            // 
-            // mantenimientoRecursoDeTIToolStripMenuItem
-            // 
-            this.mantenimientoRecursoDeTIToolStripMenuItem.Name = "mantenimientoRecursoDeTIToolStripMenuItem";
-            this.mantenimientoRecursoDeTIToolStripMenuItem.Size = new System.Drawing.Size(297, 26);
-            this.mantenimientoRecursoDeTIToolStripMenuItem.Text = "Mantenimiento Recurso de TI";
-            this.mantenimientoRecursoDeTIToolStripMenuItem.Click += new System.EventHandler(this.MantenimientoRecursoDeTIToolStripMenuItem_Click);
+            this.mantenimientoAsignaciónRecursosDeTIToolStripMenuItem.Name = "mantenimientoAsignaciónRecursosDeTIToolStripMenuItem";
+            this.mantenimientoAsignaciónRecursosDeTIToolStripMenuItem.Size = new System.Drawing.Size(366, 26);
+            this.mantenimientoAsignaciónRecursosDeTIToolStripMenuItem.Text = "Mantenimiento Asignación recursos de TI";
+            this.mantenimientoAsignaciónRecursosDeTIToolStripMenuItem.Click += new System.EventHandler(this.mantenimientoAsignaciónRecursosDeTIToolStripMenuItem_Click);
             // 
             // Index
             // 
@@ -238,6 +256,8 @@
         private System.Windows.Forms.ToolStripMenuItem mantenimientoDepartamentosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem proyectoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem mantenimientoRecursoDeTIToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem mantenimientoAsignaciónAuditorToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem mantenimientoAsignaciónRecursosDeTIToolStripMenuItem;
     }
 }
 

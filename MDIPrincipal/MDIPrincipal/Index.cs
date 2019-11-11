@@ -151,7 +151,17 @@ namespace MDIPrincipal
 
         private void MantenimientoRecursoDeTIToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            priChildMDI(new Dll_Karina.MantenimientoRecursos());
+            priChildMDI(new Dll_Karina.MantenimientoRecursosTI());
+        }
+
+        private void mantenimientoAsignaciónAuditorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            priChildMDI(new mantenimientos_SB.mantenimiento_asignacionAuditorProyecto());
+        }
+
+        private void mantenimientoAsignaciónRecursosDeTIToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            priChildMDI(new mantenimientos_SB.mantenimiento_asignacionRecursosTI());
         }
     }
 }

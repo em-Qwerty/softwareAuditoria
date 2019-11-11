@@ -111,7 +111,6 @@ E:\Descargas\Documentos\Universidad\Auditoria\Proyecto\softwareAuditoria\MDIPrin
 E:\Descargas\Documentos\Universidad\Auditoria\Proyecto\softwareAuditoria\MDIPrincipal\MDIPrincipal\bin\Debug\CapaInterfazAsignacionDePerfiles.dll
 E:\Descargas\Documentos\Universidad\Auditoria\Proyecto\softwareAuditoria\MDIPrincipal\MDIPrincipal\bin\Debug\CapaInterfazIngresoModulos.dll
 E:\Descargas\Documentos\Universidad\Auditoria\Proyecto\softwareAuditoria\MDIPrincipal\MDIPrincipal\bin\Debug\CapaInterfazMantenimientoUsuarios.dll
-E:\Descargas\Documentos\Universidad\Auditoria\Proyecto\softwareAuditoria\MDIPrincipal\MDIPrincipal\bin\Debug\Dll_Karina.dll
 E:\Descargas\Documentos\Universidad\Auditoria\Proyecto\softwareAuditoria\MDIPrincipal\MDIPrincipal\bin\Debug\ejemploVentana.dll
 E:\Descargas\Documentos\Universidad\Auditoria\Proyecto\softwareAuditoria\MDIPrincipal\MDIPrincipal\bin\Debug\mantenimientosSeguridad.dll
 E:\Descargas\Documentos\Universidad\Auditoria\Proyecto\softwareAuditoria\MDIPrincipal\MDIPrincipal\bin\Debug\Mantenimientos_EP.dll
@@ -159,7 +158,6 @@ E:\Descargas\Documentos\Universidad\Auditoria\Proyecto\softwareAuditoria\MDIPrin
 E:\Descargas\Documentos\Universidad\Auditoria\Proyecto\softwareAuditoria\MDIPrincipal\MDIPrincipal\bin\Debug\CapaInterfazAsignacionDePerfiles.pdb
 E:\Descargas\Documentos\Universidad\Auditoria\Proyecto\softwareAuditoria\MDIPrincipal\MDIPrincipal\bin\Debug\CapaInterfazIngresoModulos.pdb
 E:\Descargas\Documentos\Universidad\Auditoria\Proyecto\softwareAuditoria\MDIPrincipal\MDIPrincipal\bin\Debug\CapaInterfazMantenimientoUsuarios.pdb
-E:\Descargas\Documentos\Universidad\Auditoria\Proyecto\softwareAuditoria\MDIPrincipal\MDIPrincipal\bin\Debug\Dll_Karina.pdb
 E:\Descargas\Documentos\Universidad\Auditoria\Proyecto\softwareAuditoria\MDIPrincipal\MDIPrincipal\bin\Debug\InicioSesion.pdb
 E:\Descargas\Documentos\Universidad\Auditoria\Proyecto\softwareAuditoria\MDIPrincipal\MDIPrincipal\bin\Debug\mantenimientosSeguridad.pdb
 E:\Descargas\Documentos\Universidad\Auditoria\Proyecto\softwareAuditoria\MDIPrincipal\MDIPrincipal\bin\Debug\Mantenimientos_EP.pdb
@@ -194,3 +192,7 @@ E:\Descargas\Documentos\Universidad\Auditoria\Proyecto\softwareAuditoria\MDIPrin
 E:\Descargas\Documentos\Universidad\Auditoria\Proyecto\softwareAuditoria\MDIPrincipal\MDIPrincipal\obj\Debug\MDIAuditoria.csproj.CopyComplete
 E:\Descargas\Documentos\Universidad\Auditoria\Proyecto\softwareAuditoria\MDIPrincipal\MDIPrincipal\obj\Debug\MDIPrincipal.exe
 E:\Descargas\Documentos\Universidad\Auditoria\Proyecto\softwareAuditoria\MDIPrincipal\MDIPrincipal\obj\Debug\MDIPrincipal.pdb
+E:\Descargas\Documentos\Universidad\Auditoria\Proyecto\softwareAuditoria\MDIPrincipal\MDIPrincipal\bin\Debug\mantenimientos_SB.dll
+E:\Descargas\Documentos\Universidad\Auditoria\Proyecto\softwareAuditoria\MDIPrincipal\MDIPrincipal\bin\Debug\mantenimientos_SB.pdb
+E:\Descargas\Documentos\Universidad\Auditoria\Proyecto\softwareAuditoria\MDIPrincipal\MDIPrincipal\bin\Debug\Dll_Karina.dll
+E:\Descargas\Documentos\Universidad\Auditoria\Proyecto\softwareAuditoria\MDIPrincipal\MDIPrincipal\bin\Debug\Dll_Karina.pdb
