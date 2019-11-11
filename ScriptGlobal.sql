@@ -512,3 +512,23 @@ DEFAULT CHARACTER SET = latin1;
 SET SQL_MODE=@OLD_SQL_MODE;
 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
+
+use bdauditoria;
+
+-- Solicitud cambios [SINDY]
+-- Eliminando columna nombre_recurso
+ALTER TABLE tbl_asignacionrecursosti DROP COLUMN nombre_recurso; 
+
+-- Solicitud cambios [Karina]
+create table tbl_tipoRecursoTI(
+PK_Id_TipoRecursoTI int,
+nombre_TipoRecursoTI varchar(35),
+estatus int,
+PRIMARY KEY (PK_Id_TipoRecursoTI) 
+);
+
+ALTER TABLE tbl_recursosti add id_tiporecurso int;
+ALTER TABLE `bdauditoria`.`tbl_recursosti` 
+CHANGE COLUMN `id_tiporecurso` `id_tiporecurso` INT(11) NULL DEFAULT NULL AFTER `nombre_Recurso`;
+ALTER TABLE `tbl_recursosti` ADD FOREIGN KEY (id_tipoRecurso) REFERENCES `tbl_tipoRecursoTI` (`PK_Id_TipoRecursoTI`);
+
