@@ -1,0 +1,8 @@
+C:\Users\Vic\source\repos\ReportesSubobjetivos\CapaLogica\bin\Debug\CapaLogica.dll
+C:\Users\Vic\source\repos\ReportesSubobjetivos\CapaLogica\bin\Debug\CapaLogica.pdb
+C:\Users\Vic\source\repos\ReportesSubobjetivos\CapaLogica\bin\Debug\CapaDatos.dll
+C:\Users\Vic\source\repos\ReportesSubobjetivos\CapaLogica\bin\Debug\CapaDatos.pdb
+C:\Users\Vic\source\repos\ReportesSubobjetivos\CapaLogica\obj\Debug\CapaLogica.csprojAssemblyReference.cache
+C:\Users\Vic\source\repos\ReportesSubobjetivos\CapaLogica\obj\Debug\CapaLogica.csproj.CopyComplete
+C:\Users\Vic\source\repos\ReportesSubobjetivos\CapaLogica\obj\Debug\CapaLogica.dll
+C:\Users\Vic\source\repos\ReportesSubobjetivos\CapaLogica\obj\Debug\CapaLogica.pdb
