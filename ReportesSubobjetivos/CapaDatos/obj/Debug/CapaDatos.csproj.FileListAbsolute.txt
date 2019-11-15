@@ -1,0 +1,10 @@
+C:\Users\Vic\source\repos\ReportesSubobjetivos\CapaDatos\bin\Debug\CapaDatos.dll
+C:\Users\Vic\source\repos\ReportesSubobjetivos\CapaDatos\bin\Debug\CapaDatos.pdb
+C:\Users\Vic\source\repos\ReportesSubobjetivos\CapaDatos\obj\Debug\CapaDatos.csprojAssemblyReference.cache
+C:\Users\Vic\source\repos\ReportesSubobjetivos\CapaDatos\obj\Debug\CapaDatos.dll
+C:\Users\Vic\source\repos\ReportesSubobjetivos\CapaDatos\obj\Debug\CapaDatos.pdb
+C:\Users\Vic\Desktop\reportes\softwareAuditoria\ReportesSubobjetivos\CapaDatos\bin\Debug\CapaDatos.dll
+C:\Users\Vic\Desktop\reportes\softwareAuditoria\ReportesSubobjetivos\CapaDatos\bin\Debug\CapaDatos.pdb
+C:\Users\Vic\Desktop\reportes\softwareAuditoria\ReportesSubobjetivos\CapaDatos\obj\Debug\CapaDatos.csprojAssemblyReference.cache
+C:\Users\Vic\Desktop\reportes\softwareAuditoria\ReportesSubobjetivos\CapaDatos\obj\Debug\CapaDatos.dll
+C:\Users\Vic\Desktop\reportes\softwareAuditoria\ReportesSubobjetivos\CapaDatos\obj\Debug\CapaDatos.pdb
