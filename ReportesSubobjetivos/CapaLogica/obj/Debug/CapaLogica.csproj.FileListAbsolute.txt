@@ -14,3 +14,11 @@ C:\Users\Vic\Desktop\reportes\softwareAuditoria\ReportesSubobjetivos\CapaLogica\
 C:\Users\Vic\Desktop\reportes\softwareAuditoria\ReportesSubobjetivos\CapaLogica\obj\Debug\CapaLogica.csproj.CopyComplete
 C:\Users\Vic\Desktop\reportes\softwareAuditoria\ReportesSubobjetivos\CapaLogica\obj\Debug\CapaLogica.dll
 C:\Users\Vic\Desktop\reportes\softwareAuditoria\ReportesSubobjetivos\CapaLogica\obj\Debug\CapaLogica.pdb
+E:\Descargas\Documentos\Universidad\Auditoria\Proyecto\swAuditoriaBueno\softwareAuditoria\ReportesSubobjetivos\CapaLogica\bin\Debug\CapaLogicaVictor.dll
+E:\Descargas\Documentos\Universidad\Auditoria\Proyecto\swAuditoriaBueno\softwareAuditoria\ReportesSubobjetivos\CapaLogica\bin\Debug\CapaLogicaVictor.pdb
+E:\Descargas\Documentos\Universidad\Auditoria\Proyecto\swAuditoriaBueno\softwareAuditoria\ReportesSubobjetivos\CapaLogica\bin\Debug\CapaDatosVictor.dll
+E:\Descargas\Documentos\Universidad\Auditoria\Proyecto\swAuditoriaBueno\softwareAuditoria\ReportesSubobjetivos\CapaLogica\bin\Debug\CapaDatosVictor.pdb
+E:\Descargas\Documentos\Universidad\Auditoria\Proyecto\swAuditoriaBueno\softwareAuditoria\ReportesSubobjetivos\CapaLogica\obj\Debug\CapaLogica.csprojAssemblyReference.cache
+E:\Descargas\Documentos\Universidad\Auditoria\Proyecto\swAuditoriaBueno\softwareAuditoria\ReportesSubobjetivos\CapaLogica\obj\Debug\CapaLogica.csproj.CopyComplete
+E:\Descargas\Documentos\Universidad\Auditoria\Proyecto\swAuditoriaBueno\softwareAuditoria\ReportesSubobjetivos\CapaLogica\obj\Debug\CapaLogicaVictor.dll
+E:\Descargas\Documentos\Universidad\Auditoria\Proyecto\swAuditoriaBueno\softwareAuditoria\ReportesSubobjetivos\CapaLogica\obj\Debug\CapaLogicaVictor.pdb

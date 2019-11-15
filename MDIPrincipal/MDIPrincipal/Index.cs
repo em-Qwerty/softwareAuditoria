@@ -163,5 +163,35 @@ namespace MDIPrincipal
         {
             priChildMDI(new mantenimientos_SB.mantenimiento_asignacionRecursosTI());
         }
+
+        private void graficasYAvanceToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            priChildMDI(new CapaDiseno.GraficasAvance());
+        }
+
+        private void subObjetivosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            priChildMDI(new ClassLibrary1.frmSubObjetivos());
+        }
+
+        private void reporteSubObjetivosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            priChildMDI(new ReportesSubobjetivos.FiltroSubobjetivos());
+        }
+
+        private void subobjetivoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            priChildMDI(new ClassLibrary1.frmSubObjetivos());
+        }
+
+        private void subobjetivoToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            //priChildMDI(new relacion_departamentos.vistaSubObjetivos());
+        }
+
+        private void dominioToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            //priChildMDI(new relacion_departamentos.vistaDominios());
+        }
     }
 }

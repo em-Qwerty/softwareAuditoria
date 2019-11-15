@@ -43,9 +43,17 @@
             this.mantenimientoAuditorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mantenimientoDepartamentosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mantenimientoRecursoDeTIToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.seguridadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mantenimientoAsignaciónAuditorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mantenimientoAsignaciónRecursosDeTIToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.seguridadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.gráficasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.graficasYAvanceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.reporteSubObjetivosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.subobjetivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.visualizaciónDominiosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.subobjetivoToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.dominioToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.objetivoToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -100,7 +108,8 @@
             this.holaToolStripMenuItem,
             this.mundoToolStripMenuItem,
             this.mantenimientosToolStripMenuItem,
-            this.seguridadToolStripMenuItem});
+            this.seguridadToolStripMenuItem,
+            this.gráficasToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 35);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(800, 31);
@@ -120,7 +129,9 @@
             this.dominioToolStripMenuItem,
             this.objetivoToolStripMenuItem,
             this.normativaToolStripMenuItem,
-            this.proyectoToolStripMenuItem});
+            this.proyectoToolStripMenuItem,
+            this.subobjetivoToolStripMenuItem,
+            this.visualizaciónDominiosToolStripMenuItem});
             this.mundoToolStripMenuItem.Name = "mundoToolStripMenuItem";
             this.mundoToolStripMenuItem.Size = new System.Drawing.Size(101, 27);
             this.mundoToolStripMenuItem.Text = "Actividades";
@@ -195,13 +206,6 @@
             this.mantenimientoRecursoDeTIToolStripMenuItem.Text = "Mantenimiento Recurso de TI";
             this.mantenimientoRecursoDeTIToolStripMenuItem.Click += new System.EventHandler(this.MantenimientoRecursoDeTIToolStripMenuItem_Click);
             // 
-            // seguridadToolStripMenuItem
-            // 
-            this.seguridadToolStripMenuItem.Name = "seguridadToolStripMenuItem";
-            this.seguridadToolStripMenuItem.Size = new System.Drawing.Size(93, 27);
-            this.seguridadToolStripMenuItem.Text = "Seguridad";
-            this.seguridadToolStripMenuItem.Click += new System.EventHandler(this.SeguridadToolStripMenuItem_Click);
-            // 
             // mantenimientoAsignaciónAuditorToolStripMenuItem
             // 
             this.mantenimientoAsignaciónAuditorToolStripMenuItem.Name = "mantenimientoAsignaciónAuditorToolStripMenuItem";
@@ -215,6 +219,73 @@
             this.mantenimientoAsignaciónRecursosDeTIToolStripMenuItem.Size = new System.Drawing.Size(366, 26);
             this.mantenimientoAsignaciónRecursosDeTIToolStripMenuItem.Text = "Mantenimiento Asignación recursos de TI";
             this.mantenimientoAsignaciónRecursosDeTIToolStripMenuItem.Click += new System.EventHandler(this.mantenimientoAsignaciónRecursosDeTIToolStripMenuItem_Click);
+            // 
+            // seguridadToolStripMenuItem
+            // 
+            this.seguridadToolStripMenuItem.Name = "seguridadToolStripMenuItem";
+            this.seguridadToolStripMenuItem.Size = new System.Drawing.Size(93, 27);
+            this.seguridadToolStripMenuItem.Text = "Seguridad";
+            this.seguridadToolStripMenuItem.Click += new System.EventHandler(this.SeguridadToolStripMenuItem_Click);
+            // 
+            // gráficasToolStripMenuItem
+            // 
+            this.gráficasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.graficasYAvanceToolStripMenuItem,
+            this.reporteSubObjetivosToolStripMenuItem});
+            this.gráficasToolStripMenuItem.Name = "gráficasToolStripMenuItem";
+            this.gráficasToolStripMenuItem.Size = new System.Drawing.Size(84, 27);
+            this.gráficasToolStripMenuItem.Text = "Reportes";
+            // 
+            // graficasYAvanceToolStripMenuItem
+            // 
+            this.graficasYAvanceToolStripMenuItem.Name = "graficasYAvanceToolStripMenuItem";
+            this.graficasYAvanceToolStripMenuItem.Size = new System.Drawing.Size(200, 26);
+            this.graficasYAvanceToolStripMenuItem.Text = "Graficas y avance";
+            this.graficasYAvanceToolStripMenuItem.Click += new System.EventHandler(this.graficasYAvanceToolStripMenuItem_Click);
+            // 
+            // reporteSubObjetivosToolStripMenuItem
+            // 
+            this.reporteSubObjetivosToolStripMenuItem.Name = "reporteSubObjetivosToolStripMenuItem";
+            this.reporteSubObjetivosToolStripMenuItem.Size = new System.Drawing.Size(238, 26);
+            this.reporteSubObjetivosToolStripMenuItem.Text = "Reporte Sub-Objetivos";
+            this.reporteSubObjetivosToolStripMenuItem.Click += new System.EventHandler(this.reporteSubObjetivosToolStripMenuItem_Click);
+            // 
+            // subobjetivoToolStripMenuItem
+            // 
+            this.subobjetivoToolStripMenuItem.Name = "subobjetivoToolStripMenuItem";
+            this.subobjetivoToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
+            this.subobjetivoToolStripMenuItem.Text = "Sub-objetivo";
+            this.subobjetivoToolStripMenuItem.Click += new System.EventHandler(this.subobjetivoToolStripMenuItem_Click);
+            // 
+            // visualizaciónDominiosToolStripMenuItem
+            // 
+            this.visualizaciónDominiosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.subobjetivoToolStripMenuItem1,
+            this.dominioToolStripMenuItem1,
+            this.objetivoToolStripMenuItem1});
+            this.visualizaciónDominiosToolStripMenuItem.Name = "visualizaciónDominiosToolStripMenuItem";
+            this.visualizaciónDominiosToolStripMenuItem.Size = new System.Drawing.Size(241, 26);
+            this.visualizaciónDominiosToolStripMenuItem.Text = "Visualización Dominios";
+            // 
+            // subobjetivoToolStripMenuItem1
+            // 
+            this.subobjetivoToolStripMenuItem1.Name = "subobjetivoToolStripMenuItem1";
+            this.subobjetivoToolStripMenuItem1.Size = new System.Drawing.Size(180, 26);
+            this.subobjetivoToolStripMenuItem1.Text = "Sub-objetivo";
+            this.subobjetivoToolStripMenuItem1.Click += new System.EventHandler(this.subobjetivoToolStripMenuItem1_Click);
+            // 
+            // dominioToolStripMenuItem1
+            // 
+            this.dominioToolStripMenuItem1.Name = "dominioToolStripMenuItem1";
+            this.dominioToolStripMenuItem1.Size = new System.Drawing.Size(180, 26);
+            this.dominioToolStripMenuItem1.Text = "Dominio";
+            this.dominioToolStripMenuItem1.Click += new System.EventHandler(this.dominioToolStripMenuItem1_Click);
+            // 
+            // objetivoToolStripMenuItem1
+            // 
+            this.objetivoToolStripMenuItem1.Name = "objetivoToolStripMenuItem1";
+            this.objetivoToolStripMenuItem1.Size = new System.Drawing.Size(180, 26);
+            this.objetivoToolStripMenuItem1.Text = "Objetivo";
             // 
             // Index
             // 
@@ -258,6 +329,14 @@
         private System.Windows.Forms.ToolStripMenuItem mantenimientoRecursoDeTIToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem mantenimientoAsignaciónAuditorToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem mantenimientoAsignaciónRecursosDeTIToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem gráficasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem graficasYAvanceToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem reporteSubObjetivosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem subobjetivoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem visualizaciónDominiosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem subobjetivoToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem dominioToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem objetivoToolStripMenuItem1;
     }
 }
 

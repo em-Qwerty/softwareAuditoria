@@ -36,6 +36,9 @@
     <Reference Include="Abner Portillo">
       <HintPath>..\Dlls\Abner Portillo\Abner Portillo.dll</HintPath>
     </Reference>
+    <Reference Include="CapaDiseno">
+      <HintPath>..\Dlls\Sebas y victor\CapaDiseno.dll</HintPath>
+    </Reference>
     <Reference Include="CapaInterfazAsignacionDePerfiles">
       <HintPath>..\..\SEGURIDAD\CapaDatosAsignacionDePerfiles\CapaInterfazAsignacionDePerfiles\bin\Debug\CapaInterfazAsignacionDePerfiles.dll</HintPath>
     </Reference>
@@ -44,6 +47,9 @@
     </Reference>
     <Reference Include="CapaInterfazMantenimientoUsuarios">
       <HintPath>..\..\SEGURIDAD\CapaDatosMantenimientoUsuarios\CapaInterfazMantenimientoUsuarios\bin\Debug\CapaInterfazMantenimientoUsuarios.dll</HintPath>
+    </Reference>
+    <Reference Include="ClassLibrary1">
+      <HintPath>..\Dlls\Sesbastian\ClassLibrary1.dll</HintPath>
     </Reference>
     <Reference Include="Dll_Karina">
       <HintPath>..\Dlls\Karina Yos\Dll_Karina.dll</HintPath>
@@ -62,6 +68,12 @@
     </Reference>
     <Reference Include="mantenimientos_SB">
       <HintPath>..\Dlls\Sindy Batz\mantenimientos_SB.dll</HintPath>
+    </Reference>
+    <Reference Include="relacion_departamentos">
+      <HintPath>..\Dlls\Arrecis\relacion_departamentos.dll</HintPath>
+    </Reference>
+    <Reference Include="ReportesSubobjetivos">
+      <HintPath>..\Dlls\Victor\ReportesSubobjetivos.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />

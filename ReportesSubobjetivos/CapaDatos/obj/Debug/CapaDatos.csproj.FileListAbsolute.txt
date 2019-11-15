@@ -8,3 +8,8 @@ C:\Users\Vic\Desktop\reportes\softwareAuditoria\ReportesSubobjetivos\CapaDatos\b
 C:\Users\Vic\Desktop\reportes\softwareAuditoria\ReportesSubobjetivos\CapaDatos\obj\Debug\CapaDatos.csprojAssemblyReference.cache
 C:\Users\Vic\Desktop\reportes\softwareAuditoria\ReportesSubobjetivos\CapaDatos\obj\Debug\CapaDatos.dll
 C:\Users\Vic\Desktop\reportes\softwareAuditoria\ReportesSubobjetivos\CapaDatos\obj\Debug\CapaDatos.pdb
+E:\Descargas\Documentos\Universidad\Auditoria\Proyecto\swAuditoriaBueno\softwareAuditoria\ReportesSubobjetivos\CapaDatos\bin\Debug\CapaDatosVictor.dll
+E:\Descargas\Documentos\Universidad\Auditoria\Proyecto\swAuditoriaBueno\softwareAuditoria\ReportesSubobjetivos\CapaDatos\bin\Debug\CapaDatosVictor.pdb
+E:\Descargas\Documentos\Universidad\Auditoria\Proyecto\swAuditoriaBueno\softwareAuditoria\ReportesSubobjetivos\CapaDatos\obj\Debug\CapaDatos.csprojAssemblyReference.cache
+E:\Descargas\Documentos\Universidad\Auditoria\Proyecto\swAuditoriaBueno\softwareAuditoria\ReportesSubobjetivos\CapaDatos\obj\Debug\CapaDatosVictor.dll
+E:\Descargas\Documentos\Universidad\Auditoria\Proyecto\swAuditoriaBueno\softwareAuditoria\ReportesSubobjetivos\CapaDatos\obj\Debug\CapaDatosVictor.pdb

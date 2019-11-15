@@ -28,3 +28,11 @@ C:\Users\sebas\Desktop\SW Auditoria\softwareAuditoria\Sw_Lisandro_y_Sebastian\Gr
 C:\Users\sebas\Desktop\SW Auditoria\softwareAuditoria\Sw_Lisandro_y_Sebastian\GraficasAvance\CapaDatos\obj\Debug\CapaDatos.csproj.CopyComplete
 C:\Users\sebas\Desktop\SW Auditoria\softwareAuditoria\Sw_Lisandro_y_Sebastian\GraficasAvance\CapaDatos\obj\Debug\CapaDatos.dll
 C:\Users\sebas\Desktop\SW Auditoria\softwareAuditoria\Sw_Lisandro_y_Sebastian\GraficasAvance\CapaDatos\obj\Debug\CapaDatos.pdb
+E:\Descargas\Documentos\Universidad\Auditoria\Proyecto\swAuditoriaBueno\softwareAuditoria\Sw_Lisandro_y_Sebastian\GraficasAvance\CapaDatos\bin\Debug\CapaDatos.dll
+E:\Descargas\Documentos\Universidad\Auditoria\Proyecto\swAuditoriaBueno\softwareAuditoria\Sw_Lisandro_y_Sebastian\GraficasAvance\CapaDatos\bin\Debug\CapaDatos.pdb
+E:\Descargas\Documentos\Universidad\Auditoria\Proyecto\swAuditoriaBueno\softwareAuditoria\Sw_Lisandro_y_Sebastian\GraficasAvance\CapaDatos\bin\Debug\Google.Protobuf.dll
+E:\Descargas\Documentos\Universidad\Auditoria\Proyecto\swAuditoriaBueno\softwareAuditoria\Sw_Lisandro_y_Sebastian\GraficasAvance\CapaDatos\bin\Debug\MySql.Data.xml
+E:\Descargas\Documentos\Universidad\Auditoria\Proyecto\swAuditoriaBueno\softwareAuditoria\Sw_Lisandro_y_Sebastian\GraficasAvance\CapaDatos\obj\Debug\CapaDatos.csprojAssemblyReference.cache
+E:\Descargas\Documentos\Universidad\Auditoria\Proyecto\swAuditoriaBueno\softwareAuditoria\Sw_Lisandro_y_Sebastian\GraficasAvance\CapaDatos\obj\Debug\CapaDatos.csproj.CopyComplete
+E:\Descargas\Documentos\Universidad\Auditoria\Proyecto\swAuditoriaBueno\softwareAuditoria\Sw_Lisandro_y_Sebastian\GraficasAvance\CapaDatos\obj\Debug\CapaDatos.dll
+E:\Descargas\Documentos\Universidad\Auditoria\Proyecto\swAuditoriaBueno\softwareAuditoria\Sw_Lisandro_y_Sebastian\GraficasAvance\CapaDatos\obj\Debug\CapaDatos.pdb

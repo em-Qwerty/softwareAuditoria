@@ -47,3 +47,14 @@ C:\Users\sebas\Desktop\SW Auditoria\softwareAuditoria\Sw_Lisandro_y_Sebastian\Gr
 C:\Users\sebas\Desktop\SW Auditoria\softwareAuditoria\Sw_Lisandro_y_Sebastian\GraficasAvance\CapaLogica\obj\Debug\CapaLogica.csproj.CopyComplete
 C:\Users\sebas\Desktop\SW Auditoria\softwareAuditoria\Sw_Lisandro_y_Sebastian\GraficasAvance\CapaLogica\obj\Debug\CapaLogica.dll
 C:\Users\sebas\Desktop\SW Auditoria\softwareAuditoria\Sw_Lisandro_y_Sebastian\GraficasAvance\CapaLogica\obj\Debug\CapaLogica.pdb
+E:\Descargas\Documentos\Universidad\Auditoria\Proyecto\swAuditoriaBueno\softwareAuditoria\Sw_Lisandro_y_Sebastian\GraficasAvance\CapaLogica\bin\Debug\CapaLogica.dll
+E:\Descargas\Documentos\Universidad\Auditoria\Proyecto\swAuditoriaBueno\softwareAuditoria\Sw_Lisandro_y_Sebastian\GraficasAvance\CapaLogica\bin\Debug\CapaLogica.pdb
+E:\Descargas\Documentos\Universidad\Auditoria\Proyecto\swAuditoriaBueno\softwareAuditoria\Sw_Lisandro_y_Sebastian\GraficasAvance\CapaLogica\bin\Debug\CapaDatos.dll
+E:\Descargas\Documentos\Universidad\Auditoria\Proyecto\swAuditoriaBueno\softwareAuditoria\Sw_Lisandro_y_Sebastian\GraficasAvance\CapaLogica\bin\Debug\Google.Protobuf.dll
+E:\Descargas\Documentos\Universidad\Auditoria\Proyecto\swAuditoriaBueno\softwareAuditoria\Sw_Lisandro_y_Sebastian\GraficasAvance\CapaLogica\bin\Debug\BouncyCastle.Crypto.dll
+E:\Descargas\Documentos\Universidad\Auditoria\Proyecto\swAuditoriaBueno\softwareAuditoria\Sw_Lisandro_y_Sebastian\GraficasAvance\CapaLogica\bin\Debug\CapaDatos.pdb
+E:\Descargas\Documentos\Universidad\Auditoria\Proyecto\swAuditoriaBueno\softwareAuditoria\Sw_Lisandro_y_Sebastian\GraficasAvance\CapaLogica\bin\Debug\MySql.Data.xml
+E:\Descargas\Documentos\Universidad\Auditoria\Proyecto\swAuditoriaBueno\softwareAuditoria\Sw_Lisandro_y_Sebastian\GraficasAvance\CapaLogica\obj\Debug\CapaLogica.csprojAssemblyReference.cache
+E:\Descargas\Documentos\Universidad\Auditoria\Proyecto\swAuditoriaBueno\softwareAuditoria\Sw_Lisandro_y_Sebastian\GraficasAvance\CapaLogica\obj\Debug\CapaLogica.csproj.CopyComplete
+E:\Descargas\Documentos\Universidad\Auditoria\Proyecto\swAuditoriaBueno\softwareAuditoria\Sw_Lisandro_y_Sebastian\GraficasAvance\CapaLogica\obj\Debug\CapaLogica.dll
+E:\Descargas\Documentos\Universidad\Auditoria\Proyecto\swAuditoriaBueno\softwareAuditoria\Sw_Lisandro_y_Sebastian\GraficasAvance\CapaLogica\obj\Debug\CapaLogica.pdb
