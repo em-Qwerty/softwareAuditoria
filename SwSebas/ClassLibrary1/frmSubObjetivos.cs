@@ -23,11 +23,12 @@ namespace ClassLibrary1
         {
             ven.pubSetName("Sub-Ojbetivos");
             InitializeComponent();
-            nav.LlenarTabla("tbl_subobjetivo", dsn, Dgv_subobjetivos);
+            
         }
 
         private void ventana1_Load(object sender, EventArgs e)
         {
+            nav.LlenarTabla("tbl_subobjetivo", dsn, Dgv_subobjetivos);
             nav.NombreForm(this);
             nav.DatosCMB("tbl_auditores", Cbo_auditores, "nombre", "correo");
             Btn_asignar.Enabled = true;
@@ -45,20 +46,19 @@ namespace ClassLibrary1
 
         private void Btn_asignar_Click(object sender, EventArgs e)
         {
+            OdbcCommand consulta = new OdbcCommand("UPDATE tbl_subobjetivo SET tbl_auditores_Pk_carnet = (SELECT Pk_carnet FROM tbl_auditores where nombre LIKE '" + Cbo_auditores.Text + "') WHERE tbl_auditores_Pk_carnet = '0'");
+            consulta.Connection = cn;
+
             try
             {
-                
-                OdbcCommand consulta = new OdbcCommand("UPDATE tbl_subobjetivo SET tbl_auditores_Pk_carnet = (SELECT Pk_carnet FROM tbl_auditores where nombre LIKE '" + Cbo_auditores.Text + "') WHERE tbl_auditores_Pk_carnet = '0'");
-                consulta.Connection = cn;
                 cn.Open();
                 consulta.ExecuteNonQuery();
-                cn.Close();
 
                 Cbo_auditores.Enabled = false;
             }
-            catch
+            catch (Exception ex)
             {
-                
+                MessageBox.Show(ex.Message);
             }
         }
     }

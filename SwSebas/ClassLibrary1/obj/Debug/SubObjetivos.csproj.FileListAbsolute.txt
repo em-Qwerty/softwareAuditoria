@@ -15,3 +15,18 @@ C:\Users\sebas\Desktop\SwSeguridad\SwSebas\ClassLibrary1\obj\Debug\SubObjetivos.
 C:\Users\sebas\Desktop\SwSeguridad\SwSebas\ClassLibrary1\obj\Debug\SubObjetivos.csproj.CopyComplete
 C:\Users\sebas\Desktop\SwSeguridad\SwSebas\ClassLibrary1\obj\Debug\ClassLibrary1.dll
 C:\Users\sebas\Desktop\SwSeguridad\SwSebas\ClassLibrary1\obj\Debug\ClassLibrary1.pdb
+C:\Users\sebas\Desktop\SW Auditoria\moduloSeguridad\SwSebas\ClassLibrary1\bin\Debug\ClassLibrary1.dll
+C:\Users\sebas\Desktop\SW Auditoria\moduloSeguridad\SwSebas\ClassLibrary1\bin\Debug\ClassLibrary1.pdb
+C:\Users\sebas\Desktop\SW Auditoria\moduloSeguridad\SwSebas\ClassLibrary1\bin\Debug\CapaLogicaNavegador.dll
+C:\Users\sebas\Desktop\SW Auditoria\moduloSeguridad\SwSebas\ClassLibrary1\bin\Debug\ConsultasInteligentes.dll
+C:\Users\sebas\Desktop\SW Auditoria\moduloSeguridad\SwSebas\ClassLibrary1\bin\Debug\CapaDatosNavegador.dll
+C:\Users\sebas\Desktop\SW Auditoria\moduloSeguridad\SwSebas\ClassLibrary1\bin\Debug\Navegador_.pdb
+C:\Users\sebas\Desktop\SW Auditoria\moduloSeguridad\SwSebas\ClassLibrary1\bin\Debug\CapaLogicaNavegador.pdb
+C:\Users\sebas\Desktop\SW Auditoria\moduloSeguridad\SwSebas\ClassLibrary1\bin\Debug\CapaDatosNavegador.pdb
+C:\Users\sebas\Desktop\SW Auditoria\moduloSeguridad\SwSebas\ClassLibrary1\obj\Debug\SubObjetivos.csprojAssemblyReference.cache
+C:\Users\sebas\Desktop\SW Auditoria\moduloSeguridad\SwSebas\ClassLibrary1\obj\Debug\ClassLibrary1.frmSubObjetivos.resources
+C:\Users\sebas\Desktop\SW Auditoria\moduloSeguridad\SwSebas\ClassLibrary1\obj\Debug\SubObjetivos.csproj.GenerateResource.cache
+C:\Users\sebas\Desktop\SW Auditoria\moduloSeguridad\SwSebas\ClassLibrary1\obj\Debug\SubObjetivos.csproj.CoreCompileInputs.cache
+C:\Users\sebas\Desktop\SW Auditoria\moduloSeguridad\SwSebas\ClassLibrary1\obj\Debug\SubObjetivos.csproj.CopyComplete
+C:\Users\sebas\Desktop\SW Auditoria\moduloSeguridad\SwSebas\ClassLibrary1\obj\Debug\ClassLibrary1.dll
+C:\Users\sebas\Desktop\SW Auditoria\moduloSeguridad\SwSebas\ClassLibrary1\obj\Debug\ClassLibrary1.pdb
